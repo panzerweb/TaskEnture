@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Dialog */
+/* Center the dialog box */
+#errorDialog{
+    width: 100%; /* Full width to center easily */
+    max-width: 400px; /* Set a max width */
+    border: none; /* Remove default border */
+    padding: 0;
+    margin: auto;
+    text-align: center;
+    background-color: transparent; /* Transparent for styling */
+}
+
+#uploadDialog {
+    width: 100%; /* Full width to center easily */
+    max-width: 400px; /* Set a max width */
+    border: none; /* Remove default border */
+    padding: 0;
+    margin: auto;
+    text-align: center;
+    background-color: transparent; /* Transparent for styling */
+}
+
+.dialog-content {
+    background-color: #f8f9fa; /* Light background */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Soft shadow */
+    border: 1px solid #dee2e6; /* Light gray border */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Style the message text */
+#errmsg{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #343a40; /* Dark gray for a professional look */
+}
+
+/* Style for success message */
+.success-mess {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #28a745; /* Green color for success */
+    margin-bottom: 1rem;
+}
+
+/* Style the close button */
+#closeErrorDialog, #closeUploadDialog {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+#closeErrorDialog:hover, #closeUploadDialog:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#closeErrorDialog:focus, #closeUploadDialog:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); /* Focus ring */
+}
+
+/* Center the dialog on the screen */
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5); /* Darken background */
+}
+#uploadDialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black backdrop */
+}
