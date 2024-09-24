@@ -121,16 +121,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TaskEnture | SignUp</title>
 
     <!-- Bootstrap and CSS -->
     <link rel="stylesheet" href="../css/bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/bootstrap-5.3.3-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../css/customcss/user_auth.css">
+    <link rel="stylesheet" href="../css/customcss/reg.css">
 </head>
 <body>
+    <!-- Navigational Bar -->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="#">
+                        <img src="" alt="Brand Logo">
+                    </a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Learn More
+                            </a>
+                            <ul class="dropdown-menu bg-secondary">
+                                <li><a class="dropdown-item" href="#">About</a></li>
+                                <li><a class="dropdown-item" href="#">FAQs</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                <form class="d-flex">
+                    <a href="./login.php" class="btn btn-outline-success">Login</a>
+                </form>
+                </div>
+            </div>
+    </nav>
+
     <div class="container-lg">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center align-items-center">
             <!-- Brand Title and Image -->
             <div class="col-lg-6">
                 <img src="" alt="Brand Image">
@@ -139,51 +167,51 @@
             </div>
 
             <!-- Form for Signup -->
-            <div class="col-lg-6">
+            <div class="col-lg-6 bg-dark text-light my-5 rounded-4">
                 <!-- Success Message -->
                  <?php if(isset($insertStatusDone)){ ?>
                         <dialog id="uploadDialog"> <!-- 'open' attribute makes the dialog visible -->
                             <div class="dialog-content">
                                 <p class="success-mess">Successfully Registered!</p>
                                 <a href="login.php" class="btn btn-success">Login here...</a>
-                                <button id="closeUploadDialog" class="my-3">Close</button>
                             </div>
                         </dialog>
                 <?php }else{?>
-                    <div class="signup-form">
+                    <div class="signup-form px-3">
                         <form action="" method="post">
-                            <div class="form-group">
+                            <h1 class="lead display-6 text-center pt-5">Sign Up For Free</h1>
+                            <div class="form-group my-4">
                                 <label class="label_txt">First Name</label>
                                 <input type="text" class="form-control" name="first_name" value="<?php if(isset($error)){ echo $_POST['first_name'];} ?>" required="">
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-group my-4">
                                 <label class="label_txt">Last Name</label>
                                 <input type="text" class="form-control" name="last_name" value="<?php if(isset($error)){ echo $_POST['last_name'];} ?>" required="">
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-group my-4">
                                 <label class="label_txt">Username</label>
                                 <input type="text" class="form-control" name="username" value="<?php if(isset($error)){ echo $_POST['username'];} ?>" required="">
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-group my-4">
                                 <label class="label_txt">Email</label>
                                 <input type="email" class="form-control" name="email" value="<?php if(isset($error)){ echo $_POST['email'];} ?>" required="">
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-group my-4">
                                 <label class="label_txt">Password</label>
                                 <input type="password" name="password" class="form-control" required="">
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-group my-4">
                                 <label class="label_txt">Confirm Password</label>
                                 <input type="password" name="passwordConfirm" class="form-control" required="">
                             </div>
 
-                            <button type="submit" name="register" class="btn btn-primary btn-group-lg form_btn">SignUp</button>
-                            <p>Have an account? <a href="login.php">Log in</a></p>                            
+                            <button type="submit" name="register" class="btn btn-primary btn-group-lg form_btn w-100 mt-3 mb-4">SignUp</button>
+                            <p class="text-center pb-4">Have an account? <a href="login.php">Log in</a></p>                            
                         </form>
                     </div>
                     <?php }?>

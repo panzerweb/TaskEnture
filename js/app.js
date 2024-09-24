@@ -1,3 +1,4 @@
+//JavaScript HTML Dialog Box
 document.addEventListener('DOMContentLoaded', function() {
     // Error Dialog Box
     const errorDialog = document.getElementById('errorDialog');
@@ -27,3 +28,5 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+

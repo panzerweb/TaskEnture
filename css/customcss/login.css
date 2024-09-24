@@ -4,19 +4,10 @@
     box-sizing: border-box;
 }
 
-/* Dialog */
+/* login.php Styling */
+/* Dialog only for the errorDialog*/
 /* Center the dialog box */
 #errorDialog{
-    width: 100%; /* Full width to center easily */
-    max-width: 400px; /* Set a max width */
-    border: none; /* Remove default border */
-    padding: 0;
-    margin: auto;
-    text-align: center;
-    background-color: transparent; /* Transparent for styling */
-}
-
-#uploadDialog {
     width: 100%; /* Full width to center easily */
     max-width: 400px; /* Set a max width */
     border: none; /* Remove default border */
@@ -45,16 +36,8 @@
     color: #343a40; /* Dark gray for a professional look */
 }
 
-/* Style for success message */
-.success-mess {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #28a745; /* Green color for success */
-    margin-bottom: 1rem;
-}
-
 /* Style the close button */
-#closeErrorDialog, #closeUploadDialog {
+#closeErrorDialog{
     padding: 0.5rem 1.5rem;
     font-size: 1rem;
     border-radius: 5px;
@@ -77,7 +60,4 @@
 /* Center the dialog on the screen */
 dialog::backdrop {
     background-color: rgba(0, 0, 0, 0.5); /* Darken background */
-}
-#uploadDialog::backdrop {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black backdrop */
 }
