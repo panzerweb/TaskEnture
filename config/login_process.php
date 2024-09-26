@@ -20,7 +20,7 @@
                     //We create two session variables to get user data if login is successful
                     $_SESSION["login_sess"] = 1; //The user has logged in
                     $_SESSION['login_email'] = $row['email']; //storing the logged email
-                    header("location: ./profile_account.php");
+                    header("location: ../dashboard.php");
                 }
                 else{
                     header("location:login.php?login_error=" . $userOrEmail);

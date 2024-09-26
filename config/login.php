@@ -54,7 +54,7 @@
                         <p class="text-center">
                             <a href="./forgot_password.php">Forgot Password?</a>
                         </p>
-                        <p class="text-center">Don't have an account?<a href="./registration.php">Signup</a></p>
+                        <p class="text-center">Don't have an account?<a href="./registration.php" class="mx-1">Signup</a></p>
                     </form>
                 </div>
             </div>

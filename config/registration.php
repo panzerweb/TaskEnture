@@ -203,6 +203,7 @@
                             <div class="form-group my-4">
                                 <label class="label_txt">Password</label>
                                 <input type="password" name="password" class="form-control" required="">
+                                <label for="" class="label_txt">Show Password</label>
                             </div>
 
                             <div class="form-group my-4">

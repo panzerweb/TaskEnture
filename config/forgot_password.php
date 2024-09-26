@@ -42,15 +42,15 @@
         <div class="row justify-content-center">
             <div class="col-lg-12">
                 <form action="forgotP_process.php" method="post" class="bg-dark text-light w-50 mx-auto p-3">
-                    <div class="login_form">
+                    <d  iv class="login_form">
                         <div class="form-group">
-                        <!-- If Email is sent -->
+                        <!-- If the process of being successful is yet to be done -->
                         <?php if(!isset($_GET["sentEmailOrUser"])) {?>
                             <label for="label_text">Username or Email Address</label>
                             <input type="text" class="form-control" name="userOrEmail" id="userOrEmail" value="<?php if(!empty($error)){echo $error;} ?>">
+                            <button class="btn btn-primary btn-group form_btn" type="submit" name="submitLink">Send Link</button> 
                         <?php }?>
                         </div>   
-                        <button class="btn btn-primary btn-group form_btn" type="submit" name="submitLink">Send Link</button> 
                     </div>
 
                     <p class="text-center">Have an account? <a href="login.php">Log in</a></p>                            
