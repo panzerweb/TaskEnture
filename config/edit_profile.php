@@ -20,10 +20,10 @@
                 <?php
                     // Image presentation
                     if ($image == null) {
-                        echo "<img src='../assets/img/no-photo.png' alt='No Image' style='width: 100px; height: 100px; object-fit: cover; border-radius: 50%;'>
+                        echo "<img src='../assets/img/no-photo.png' alt='No Image' style='width: 150px; height: 150px; object-fit: cover; border-radius: 50%;'>
                             <p class='text-center'>No Image Found</p>";
                     } else {
-                        echo "<img src='../assets/img/" . $image . "' style='width: 20vw; height: auto; object-fit: contain; padding: 0; border:2px solid #121212;'>";
+                        echo "<img src='../assets/img/" . $image . "' style='width: 20vw; height: 30vh; max-width: 300px; max-height: 300px; object-fit: cover; border-radius: 10px; border:2px solid #121212; padding: 0;'>";
                     }
                 ?>
                 <h3>Welcome! <span class="username-span text-success fw-bold"><?php echo $username; ?></span></h3>

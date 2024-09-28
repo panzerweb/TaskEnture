@@ -1,3 +1,4 @@
+<!-- Processes the editing -->
 <?php 
     $error = [];
     //If the button to update profile is clicked and set

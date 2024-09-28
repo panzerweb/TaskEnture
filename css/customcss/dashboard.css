@@ -29,6 +29,9 @@
 }
 
 /* Main Content */
+.main-content{
+    background: var(--darken-tertiary) !important;
+}
 .title-header{
     background-color: #401f71;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='%236f44ec' fill-opacity='0.4'%3E%3Cpath d='M12 0h18v6h6v6h6v18h-6v6h-6v6H12v-6H6v-6H0V12h6V6h6V0zm12 6h-6v6h-6v6H6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6V6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
@@ -51,4 +54,46 @@
 }
 .task-input:focus{
     background: var(--darken-tertiary);
+}
+
+/* Inputs and Table */
+.input-group{
+    border-radius: 5px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+table{
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+/* Image Styling */
+/* Default styling for the images */
+.profile-img {
+    width: 5vw;
+    height: 5vw;
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #121212;
+}
+
+/* Styling for the no-photo placeholder */
+.no-photo {
+    width: 150px;
+    height: 150px;
+}
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+    .profile-img {
+        width: 10vw; /* Make the image slightly larger on smaller devices */
+        height: 10vw;
+        max-width: 200px; /* Set max limits to avoid excessive size */
+        max-height: 200px;
+    }
+
+    .no-photo {
+        width: 180px; /* Slightly larger placeholder on small devices */
+        height: 180px;
+    }
 }

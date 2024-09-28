@@ -88,17 +88,16 @@
                 <div class="dropdown pb-4">
                     <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                                             <!-- Image Showing -->
-                    <?php
-                        //Image presentation
-                        if ($image == null) {
-                            echo "
-                                    <img src='./assets/img/no-profile.png' alt='No Image' width='40'>
-                                ";
-                        } else {
-                            echo "<img src = './assets/img/" . $image . "' width='40'>";
-                        }
-                        
-                    ?>
+                        <!-- Image Showing -->
+                        <?php
+                            // Image presentation
+                            if ($image == null) {
+                                echo "<img src='./assets/img/no-photo.png' alt='No Image' class='profile-img no-photo'>
+                                    <p class='text-center'>No Image Found</p>";
+                            } else {
+                                echo "<img src='./assets/img/" . $image . "' class='profile-img uploaded-img'>";
+                            }
+                        ?>
                         <span class="d-none d-sm-inline mx-1">
                             <?php
                                 echo htmlspecialchars($username);

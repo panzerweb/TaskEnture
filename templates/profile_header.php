@@ -90,16 +90,15 @@
                 <div class="dropdown pb-4">
                     <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                                             <!-- Image Showing -->
+                    <!-- Image Showing -->
                     <?php
-                        //Image presentation
+                        // Image presentation
                         if ($image == null) {
-                            echo "
-                                    <img src='../assets/img/no-profile.png' alt='No Image' width='40'>
-                                ";
+                            echo "<img src='../assets/img/no-photo.png' alt='No Image' style='width: 150px; height: 150px; object-fit: cover; border-radius: 50%;'>
+                                <p class='text-center'>No Image Found</p>";
                         } else {
-                            echo "<img src = '../assets/img/" . $image . "' width='40'>";
+                            echo "<img src='../assets/img/" . $image . "' style='width: 5vw; height: 5vw; max-width: 300px; max-height: 300px; object-fit: cover; border-radius: 50%; border:2px solid #121212; padding: 0;'>";
                         }
-                        
                     ?>
                         <span class="d-none d-sm-inline mx-1">
                             <?php
