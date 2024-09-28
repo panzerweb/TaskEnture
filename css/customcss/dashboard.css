@@ -3,3 +3,52 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --primary: #401f71;
+    --secondary: #fdaf7b;
+    --tertiary: #ffffff;
+
+    --lighten-primary: #6635b1;
+    --lighten-secondary: #f78f4b;
+    --darken-tertiary: #dad9d9c5;
+}
+
+/* Sidebar */
+.sidebar{
+    background: var(--primary) !important;
+}
+.nav .nav-item{
+    transition: all 0.2s linear;
+}
+.nav .nav-item:hover{
+    transform: translateX(2px);
+}
+.nav .nav-item a:hover{
+    color: var(--secondary) !important;
+}
+
+/* Main Content */
+.title-header{
+    background-color: #401f71;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='%236f44ec' fill-opacity='0.4'%3E%3Cpath d='M12 0h18v6h6v6h6v18h-6v6h-6v6H12v-6H6v-6H0V12h6V6h6V0zm12 6h-6v6h-6v6H6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6V6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+    color: var(--tertiary);
+}
+.title-header h1{
+    font-size: clamp(1rem, 10vw, 3.5rem); 
+}
+
+/* Button and Input for adding task */
+.add-btn{
+    background: var(--secondary);
+}
+.add-btn:hover{
+    outline: 2px solid var(--secondary);
+    background: var(--lighten-secondary);
+}
+.task-input{
+    font-size: clamp(1rem, 2.5vw, 1.3rem); 
+}
+.task-input:focus{
+    background: var(--darken-tertiary);
+}
