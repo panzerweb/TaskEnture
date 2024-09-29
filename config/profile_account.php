@@ -42,7 +42,7 @@
                         echo "<img src='../assets/img/no-photo.png' alt='No Image' style='width: 150px; height: 150px; object-fit: cover; border-radius: 50%;'>
                             <p class='text-center'>No Image Found</p>";
                     } else {
-                        echo "<img src='../assets/img/" . $image . "' style='width: 20vw; height: 30vh; max-width: 300px; max-height: 300px; object-fit: cover; border-radius: 10px; border:2px solid #121212; padding: 0;'>";
+                        echo "<img src='../assets/img/" . $image . "' style='width: 15vw; height: 30vh; max-width: 300px; max-height: 300px; object-fit: cover; border-radius: 10px; border:2px solid #121212; padding: 0;'>";
                     }
                 ?>
 

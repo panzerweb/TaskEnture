@@ -106,7 +106,7 @@
         if (!empty($error)) {
             echo "<dialog id='errorDialog'>
                     <div class='dialog-content'>
-                        <h2>Error!</h2>";
+                        <h2 class='text-light fs-1'>Error!</h2>";
             foreach($error as $err){
                 echo "<p class='errmsg'>&#x26A0; $err</p>";
             }
@@ -130,44 +130,44 @@
 </head>
 <body>
     <!-- Navigational Bar -->
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <nav class="navbar navbar-expand-lg bg-light navbar-dark">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <a class="navbar-brand" href="#">
-                        <img src="" alt="Brand Logo">
+                    <a class="navbar-brand fw-bold fs-3 text-light" href="#">
+                        <span class="text-warning">Task</span>enture
                     </a>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Learn More
                             </a>
-                            <ul class="dropdown-menu bg-secondary">
+                            <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">About</a></li>
                                 <li><a class="dropdown-item" href="#">FAQs</a></li>
                             </ul>
                         </li>
                     </ul>
                 <form class="d-flex">
-                    <a href="./login.php" class="btn btn-outline-success">Login</a>
+                    <a href="./login.php" class="btn px-3 rounded-3">Login</a>
                 </form>
                 </div>
             </div>
     </nav>
 
     <div class="container-lg">
-        <div class="row justify-content-center align-items-center">
+        <div class="row justify-content-center align-items-start">
             <!-- Brand Title and Image -->
-            <div class="col-lg-6">
-                <img src="" alt="Brand Image">
-                <h1>Stop Procrastinating and Master your Task</h1>
-                <p>Create Task, do them, and earn badges and achievements along the way as your productivity soars high</p>
+            <div class="col-lg-6 mt-5 brand">
+                <img src="../assets/logo/Taskenturelogo.svg" alt="" class="img-fluid mx-5">
+                <h1 class="fw-bold">Stop Procrastinating and Master your Task</h1>
+                <p class="lead text-light">Create Task, do them, and earn badges and achievements along the way as your productivity soars high</p>
             </div>
 
             <!-- Form for Signup -->
-            <div class="col-lg-6 bg-dark text-light my-5 rounded-4">
+            <div class="sign-up col-lg-6 text-light my-5 rounded-4">
                 <!-- Success Message -->
                  <?php if(isset($insertStatusDone)){ ?>
                         <dialog id="uploadDialog"> <!-- 'open' attribute makes the dialog visible -->
@@ -179,7 +179,7 @@
                 <?php }else{?>
                     <div class="signup-form px-3">
                         <form action="" method="post">
-                            <h1 class="lead display-6 text-center pt-5">Sign Up For Free</h1>
+                            <h1 class="lead display-6 text-center pt-5 pb-3 fw-bold">Sign Up For Free</h1>
                             <div class="form-group my-4">
                                 <label class="label_txt">First Name</label>
                                 <input type="text" class="form-control" name="first_name" value="<?php if(isset($error)){ echo $_POST['first_name'];} ?>" required="">
@@ -203,7 +203,6 @@
                             <div class="form-group my-4">
                                 <label class="label_txt">Password</label>
                                 <input type="password" name="password" class="form-control" required="">
-                                <label for="" class="label_txt">Show Password</label>
                             </div>
 
                             <div class="form-group my-4">
@@ -211,8 +210,8 @@
                                 <input type="password" name="passwordConfirm" class="form-control" required="">
                             </div>
 
-                            <button type="submit" name="register" class="btn btn-primary btn-group-lg form_btn w-100 mt-3 mb-4">SignUp</button>
-                            <p class="text-center pb-4">Have an account? <a href="login.php">Log in</a></p>                            
+                            <button type="submit" name="register" class="btn form_btn w-100 mt-3 mb-4">Sign Up</button>
+                            <p class="text-center pb-4">Have an account? <a href="login.php" class="text-decoration-none text-warning">Log in</a></p>                            
                         </form>
                     </div>
                     <?php }?>

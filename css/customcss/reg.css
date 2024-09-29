@@ -4,6 +4,92 @@
     box-sizing: border-box;
 }
 
+:root{
+    --primary: #401f71;
+    --secondary: #fdaf7b;
+    --tertiary: #ffffff;
+
+    --lighten-primary: #6635b1;
+    --lighten-secondary: #f78f4b;
+    --darken-tertiary: #dad9d9c5;
+}   
+body{
+	background: var(--lighten-primary);
+}
+/* Navbar */
+.navbar{
+    background: var(--primary) !important;
+}
+.navbar .btn{
+    background: var(--lighten-secondary);
+    font-size: clamp(1rem, 1.2vw, 1.7rem); 
+    color: var(--tertiary);
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.navbar .btn:hover{
+    background: transparent;
+    outline: 2px solid var(--lighten-secondary);
+    color: var(--lighten-secondary);
+}
+.dropdown-toggle{
+    color: var(--tertiary);
+}
+.dropdown-toggle:hover{
+    color: var(--lighten-secondary);
+}
+.dropdown-menu{
+    background: var(--primary) !important;
+    color: var(--tertiary) !important;
+}
+.dropdown-menu li a{
+    color: var(--tertiary);
+}
+.dropdown-menu:hover li a{
+    color: var(--lighten-secondary);
+}
+/* Style for first column */
+.brand h1{
+    font-size: clamp(2.5rem, 3.5vw, 4rem); 
+    color: var(--lighten-secondary);
+}
+.brand p{
+    font-size: clamp(1.2rem, 1.6vw, 2.5rem); 
+}
+
+/* Signup Form */
+.sign-up{
+    background: var(--primary);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.sign-up h1{
+    font-size: clamp(2.5rem, 3.5vw, 4rem); 
+    color: var(--lighten-secondary);
+}
+input[type="text"], input[type="email"], input[type="password"]{
+    background-color: #311857;
+    outline: none;
+    border: none;
+    transition: all 0.2s linear;
+}
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus{
+    background-color: #24123f;
+    color: var(--secondary);
+    font-weight: 600;
+    border: 3px solid var(--lighten-primary)
+}
+.sign-up .btn{
+    background: var(--lighten-secondary);
+    font-size: clamp(1rem, 1.2vw, 1.7rem); 
+    color: var(--tertiary);
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.sign-up .btn:hover{
+    background: transparent;
+    outline: 2px solid var(--lighten-secondary);
+    color: var(--lighten-secondary);
+}
 /* registration.php Styling */
 /* Dialog for both dialog: errorDialog and uploadDialog*/
 /* Center the dialog box */
@@ -28,11 +114,10 @@
 }
 
 .dialog-content {
-    background-color: #f8f9fa; /* Light background */
+    background-color: var(--lighten-primary); /* Light background */
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Soft shadow */
-    border: 1px solid #dee2e6; /* Light gray border */
+    border: 2px solid var(--secondary); /* Light gray border */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,10 +125,10 @@
 
 
 /* Style the message text */
-#errmsg{
-    font-size: 1.1rem;
+.errmsg{
+    font-size: 1rem;
     font-weight: 500;
-    color: #343a40; /* Dark gray for a professional look */
+    color: var(--tertiary) !important; /* Dark gray for a professional look */
 }
 
 /* Style for success message */
@@ -60,19 +145,19 @@
     font-size: 1rem;
     border-radius: 5px;
     font-weight: 600;
-    background-color: #007bff; /* Bootstrap primary color */
+    background-color: var(--lighten-secondary); /* Bootstrap primary color */
     color: white;
-    border: none;
     transition: background-color 0.3s ease;
 }
 
 #closeErrorDialog:hover, #closeUploadDialog:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-}
+    background: transparent;
+    outline: 2px solid var(--lighten-secondary);
+    color: var(--lighten-secondary);}
 
 #closeErrorDialog:focus, #closeUploadDialog:focus {
     outline: none;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); /* Focus ring */
+    box-shadow: none;
 }
 
 /* Center the dialog on the screen */
