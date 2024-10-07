@@ -21,12 +21,12 @@
                     // Image presentation
                     if ($image == null) {
                         echo "<img src='../assets/img/no-photo.png' alt='No Image' style='width: 150px; height: 150px; object-fit: cover; border-radius: 50%;'>
-                            <p class='text-center'>No Image Found</p>";
+                            <p class='text-center text-light'>No Image Found</p>";
                     } else {
-                        echo "<img src='../assets/img/" . $image . "' style='width: 15vw; height: 30vh; max-width: 300px; max-height: 300px; object-fit: cover; border-radius: 10px; border:2px solid #121212; padding: 0;'>";
+                        echo "<img src='../assets/img/" . $image . "' style='width: 30vw; height: 30vh; max-width: 300px; max-height: 300px; object-fit: cover; border-radius: 10px; border:2px solid #121212; padding: 0;'>";
                     }
                 ?>
-                <h3>Welcome! <span class="username-span text-success fw-bold"><?php echo $username; ?></span></h3>
+                <h3 class="text-dark">Welcome! <span class="username-span text-warning fw-bold"><?php echo $username; ?></span></h3>
 
 
                 <!-- Table Showing the Personal Details -->

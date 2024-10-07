@@ -4,6 +4,61 @@
     box-sizing: border-box;
 }
 
+:root{
+    --primary: #401f71;
+    --secondary: #fdaf7b;
+    --tertiary: #ffffff;
+
+    --lighten-primary: #6635b1;
+    --lighten-secondary: #f78f4b;
+    --darken-tertiary: #dad9d9c5;
+}   
+
+body{
+    background: var(--lighten-primary) url("./background/bg-2.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* Form */
+.login-form{
+    background: rgba(63, 31, 112, 0.5);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.login-form .btn{
+    background: var(--lighten-secondary);
+    font-size: clamp(1rem, 1.2vw, 1.7rem); 
+    color: var(--tertiary);
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.login-form .btn:hover{
+    background: transparent;
+    outline: 2px solid var(--lighten-secondary);
+    color: var(--lighten-secondary);
+}
+.login-form a:hover{
+    text-decoration: underline !important;
+}
+/* Inputs Styling */
+input[type="text"], input[type="email"], input[type="password"]{
+    background-color: #311857;
+    color: var(--secondary);
+    outline: none;
+    border: none;
+    transition: all 0.2s linear;
+}
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus{
+    background-color: #24123f;
+    color: var(--secondary);
+    font-weight: 600;
+    border: 3px solid var(--lighten-primary)
+}
+
 /* login.php Styling */
 /* Dialog only for the errorDialog*/
 /* Center the dialog box */
@@ -60,4 +115,17 @@
 /* Center the dialog on the screen */
 dialog::backdrop {
     background-color: rgba(0, 0, 0, 0.5); /* Darken background */
+}
+
+
+@media only screen and (max-width: 767px){
+
+}
+
+/* todo Tablet Devices */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .login-form{
+        width: calc(100% - 10rem);
+        margin: auto;
+    }
 }

@@ -18,10 +18,12 @@
     <div class="container-lg">
         <div class="row justify-content-center align-items-center my-5">
             <div class="col-lg-6 mx-auto my-5">
-                <div class="login-form bg-dark p-3 px-4 text-light">
+                <div class="login-form p-3 px-4 text-light">
                     <form action="./login_process.php" method="post" class="px-2">
                         <div class="form-group my-3">
-                            <img src="" alt="Brand Image" class="logo img-fluid my-3 text-center mx-auto"><br>
+                            <div class="d-flex justify-content-center mb-3">
+                                <img src="../assets/logo/landscape.svg" alt="Brand Image" class="logo img-fluid my-1 text-center mx-auto">
+                            </div>
                                 <?php
                                     //retrieves an error if there are any
                                     if (isset($_GET["login_error"])) {
@@ -50,11 +52,13 @@
                             <input type="password" name="password" id="password" class="form-control" required="">
                         </div>
 
-                        <button type="submit" name="login" class="btn btn-primary btn-group-lg form_btn w-100 mt-3 mb-2">Login</button>
+                        <button type="submit" name="login" class="btn form_btn w-100 mt-3 mb-2">Login</button>
                         <p class="text-center">
-                            <a href="./forgot_password.php">Forgot Password?</a>
+                            <a href="./forgot_password.php" class="text-decoration-none text-warning forgot-password">Forgot Password?</a>
                         </p>
-                        <p class="text-center">Don't have an account?<a href="./registration.php" class="mx-1">Signup</a></p>
+                        <p class="text-center">Don't have an account?
+                            <a href="./registration.php" class="mx-1 text-decoration-none text-warning">Signup</a>
+                        </p>
                     </form>
                 </div>
             </div>

@@ -40,18 +40,18 @@
                     // Image presentation
                     if ($image == null) {
                         echo "<img src='../assets/img/no-photo.png' alt='No Image' style='width: 150px; height: 150px; object-fit: cover; border-radius: 50%;'>
-                            <p class='text-center'>No Image Found</p>";
+                            <p class='text-center text-light'>No Image Found</p>";
                     } else {
-                        echo "<img src='../assets/img/" . $image . "' style='width: 15vw; height: 30vh; max-width: 300px; max-height: 300px; object-fit: cover; border-radius: 10px; border:2px solid #121212; padding: 0;'>";
+                        echo "<img src='../assets/img/" . $image . "' style='width: 30vw; height: 30vh; max-width: 300px; max-height: 300px; object-fit: cover; border-radius: 10px; border:2px solid #121212; padding: 0;'>";
                     }
                 ?>
 
-                <h3>Welcome! <span class="username-span text-success fw-bold"><?php echo $username; ?></span></h3>
+                <h3 class="text-dark">Welcome! <span class="username-span text-warning fw-bold"><?php echo $username; ?></span></h3>
 
 
                 <!-- Table Showing the Personal Details -->
                 <div class="table-responsive small">
-                    <table class="table table-info table-striped table-hover">
+                    <table class="table table-striped table-hover">
                         <caption class="text-light">Logged User's registered information</caption>
                         <tr>
                             <th>First Name:</th>
@@ -73,13 +73,13 @@
                 </div>  
                 <div class="d-flex justify-content-center flex-column flex-md-row">
                         <a href="logout.php" class="mx-2 text-decoration-none">
-                            <button type="submit" class="btn btn-danger w-100 my-1">Logout</button>
+                            <button type="submit" class="btn btn-warning w-100 my-1">Logout</button>
                         </a>
                         <a href="edit_profile.php" class="mx-2 text-decoration-none">
                             <button type="submit" class="btn btn-warning w-100 my-1">Edit Profile</button>
                         </a>
                         <a href="change_password.php" class="mx-2 text-decoration-none">
-                            <button type="submit" class="btn btn-success w-100 my-1">Change Password</button>
+                            <button type="submit" class="btn btn-warning w-100 my-1">Change Password</button>
                         </a>
                 </div>         
             </div>

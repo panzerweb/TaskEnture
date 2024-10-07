@@ -28,5 +28,88 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+//Truncate Text
+document.addEventListener("DOMContentLoaded", function(){
+    let myTable = document.getElementById("myTable").rows[0].cells.namedItem("task-name").innerHTML;
+    let lengthOfTask = myTable.length;
+    if (lengthOfTask > 15) {
+       let truncateText = myTable.substring(0, 15) + "...";
+       document.getElementById("task-name").textContent = truncateText;
+    }
+})
 
+//Filterable Buttons for labeling
+
+const filterButtons = document.querySelectorAll('.filter-button');
+const taskContainer = document.querySelectorAll('.task-container');
+
+filterButtons.forEach(function(button){
+    button.addEventListener('click', function(){
+        const btnCategory = button.dataset.category;
+
+        taskContainer.forEach(function(container){
+            const containerCategory = container.dataset.category;
+
+            if (btnCategory === 'all' || containerCategory === btnCategory) {
+                container.style.display = 'block';
+            } else {
+                container.style.display = 'none';
+
+            }
+        })
+    })
+})
+
+
+//Active Filterable buttons
+document.addEventListener('DOMContentLoaded', function () {
+    // Get the filter buttons
+    const allBtn = document.getElementById('all-btn');
+    const personalBtn = document.getElementById('personal-btn');
+    const professionalBtn = document.getElementById('professional-btn');
+    
+    // Get all task containers
+    const taskContainers = document.querySelectorAll('.task-container');
+
+    // Function to remove active class from buttons except the All button
+    function resetButtonStates() {
+        personalBtn.classList.remove('active');
+        professionalBtn.classList.remove('active');
+    }
+
+    // All button: Always active and shows all tasks
+    allBtn.addEventListener('click', function () {
+        resetButtonStates(); // Remove active class from personal and professional
+        taskContainers.forEach(container => container.style.display = 'block'); // Show all tasks
+    });
+
+    // Personal button: Toggles active state and shows only personal tasks
+    personalBtn.addEventListener('click', function () {
+        resetButtonStates();
+        personalBtn.classList.add('active');
+        taskContainers.forEach(container => {
+            if (container.dataset.category === 'personal') {
+                container.style.display = 'block'; // Show personal tasks
+            } else {
+                container.style.display = 'none'; // Hide others
+            }
+        });
+    });
+
+    // Professional button: Toggles active state and shows only professional tasks
+    professionalBtn.addEventListener('click', function () {
+        resetButtonStates();
+        professionalBtn.classList.add('active');
+        taskContainers.forEach(container => {
+            if (container.dataset.category === 'professional') {
+                container.style.display = 'block'; // Show professional tasks
+            } else {
+                container.style.display = 'none'; // Hide others
+            }
+        });
+    });
+
+    // Initially set all tasks to be visible
+    allBtn.click();
+});
 

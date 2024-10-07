@@ -14,3 +14,43 @@
     --darken-tertiary: #dad9d9c5;
 }
 
+.profile-col{
+    background: var(--darken-tertiary) url("./background/bg-1.svg") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* Image Styling */
+/* Default styling for the images */
+.profile-img {
+    width: 5vw;
+    height: 5vw;
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #121212;
+}
+
+/* Styling for the no-photo placeholder */
+.no-photo {
+    width: 5vw;
+    height: 5vw;
+}
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+    .profile-img {
+        width: 10vw; /* Make the image slightly larger on smaller devices */
+        height: 10vw;
+        max-width: 200px; /* Set max limits to avoid excessive size */
+        max-height: 200px;
+    }
+
+    .no-photo {
+        width: 5vw; /* Slightly larger placeholder on small devices */
+        height: 5vw;
+    }
+}

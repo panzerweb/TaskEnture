@@ -14,10 +14,16 @@
     --darken-tertiary: #dad9d9c5;
 }   
 body{
-	background: var(--lighten-primary);
+    background: var(--lighten-primary) url("./background/bg-2.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 /* Navbar */
 .navbar{
+    background: var(--primary) !important;
+}
+.offcanvas{
     background: var(--primary) !important;
 }
 .navbar .btn{
@@ -59,8 +65,12 @@ body{
 
 /* Signup Form */
 .sign-up{
-    background: var(--primary);
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background: rgba(63, 31, 112, 0.747);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .sign-up h1{
     font-size: clamp(2.5rem, 3.5vw, 4rem); 
@@ -68,6 +78,7 @@ body{
 }
 input[type="text"], input[type="email"], input[type="password"]{
     background-color: #311857;
+    color: var(--secondary);
     outline: none;
     border: none;
     transition: all 0.2s linear;
@@ -166,4 +177,14 @@ dialog::backdrop {
 }
 #uploadDialog::backdrop {
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black backdrop */
+}
+
+/* todo Mobile Devices */
+@media only screen and (max-width: 767px){
+    .sign-up{
+        width: calc(100% - 3rem);
+    }
+    .brand h1, .brand p{
+        text-align: center;
+    }
 }

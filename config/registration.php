@@ -33,10 +33,10 @@
             }
 
         //Validate Username
-            if(strlen($username) < 3 || strlen($username) > 50){
-                $error[] = "First Name Should be between 3 and 50 characters only.";
+            if(strlen($username) < 3 || strlen($username) > 20){
+                $error[] = "First Name Should be between 3 and 20 characters only.";
             }
-            if(!preg_match("/^[A-Za-z _]*[A-Za-z ]+[A-Za-z _]*$/", $username)){
+            if(!preg_match("/^[A-Za-z][A-Za-z0-9_]*$/", $username)){
                 $error[] = "Invalid Username. No space and no number at the start.";
             }
 
@@ -129,45 +129,64 @@
     <link rel="stylesheet" href="../css/customcss/reg.css">
 </head>
 <body>
+
     <!-- Navigational Bar -->
-        <nav class="navbar navbar-expand-lg bg-light navbar-dark">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg bg-light navbar-dark">
+        <div class="container-fluid">
+            <!-- Brand -->
+            <a class="navbar-brand fw-bold fs-3 text-light" href="#">
+                <span class="text-warning">Task</span>enture
+            </a>
+            <!-- Toggler Button to trigger Offcanvas -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            </button>
+            
+            <!-- Offcanvas -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <!-- Brand -->
                     <a class="navbar-brand fw-bold fs-3 text-light" href="#">
                         <span class="text-warning">Task</span>enture
                     </a>
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <!-- Navbar Items -->
+                    <ul class="navbar-nav justify-content-start align-self-center flex-grow-1 pe-3">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Learn More
                             </a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu dropdown-menu-dark">
                                 <li><a class="dropdown-item" href="#">About</a></li>
                                 <li><a class="dropdown-item" href="#">FAQs</a></li>
                             </ul>
                         </li>
                     </ul>
-                <form class="d-flex">
-                    <a href="./login.php" class="btn px-3 rounded-3">Login</a>
-                </form>
+
+                    <!-- Login Button -->
+                    <form class="d-flex align-items-center mt-2">
+                        <a href="./login.php" class="btn btn-success px-3 rounded-3">Login</a>
+                    </form>
                 </div>
             </div>
+        </div>
     </nav>
 
     <div class="container-lg">
         <div class="row justify-content-center align-items-start">
             <!-- Brand Title and Image -->
-            <div class="col-lg-6 mt-5 brand">
-                <img src="../assets/logo/Taskenturelogo.svg" alt="" class="img-fluid mx-5">
-                <h1 class="fw-bold">Stop Procrastinating and Master your Task</h1>
-                <p class="lead text-light">Create Task, do them, and earn badges and achievements along the way as your productivity soars high</p>
+            <div class="col-12 col-md-6 col-lg-6 mt-5 brand">
+                <div class="d-flex justify-content-center">
+                    <img src="../assets/logo/Taskenturelogo2.svg" alt="" class="mx-auto">
+                </div>
+                <h1 class="fw-bold mx-auto">Stop Procrastinating and Master your Task</h1>
+                <p class="lead text-light mx-auto">Create Task, do them, and earn badges and achievements along the way as your productivity soars high</p>
             </div>
 
             <!-- Form for Signup -->
-            <div class="sign-up col-lg-6 text-light my-5 rounded-4">
+            <div class="sign-up col-12 col-md-6 col-lg-6 text-light my-5 rounded-4">
                 <!-- Success Message -->
                  <?php if(isset($insertStatusDone)){ ?>
                         <dialog id="uploadDialog"> <!-- 'open' attribute makes the dialog visible -->
@@ -180,6 +199,7 @@
                     <div class="signup-form px-3">
                         <form action="" method="post">
                             <h1 class="lead display-6 text-center pt-5 pb-3 fw-bold">Sign Up For Free</h1>
+                            <span class="text-light">Username must be 1 to 20 characters, containing only letters a to z, numbers 0 to 9, hyphens, or underscores, and cannot include any inappropriate terms.</span>
                             <div class="form-group my-4">
                                 <label class="label_txt">First Name</label>
                                 <input type="text" class="form-control" name="first_name" value="<?php if(isset($error)){ echo $_POST['first_name'];} ?>" required="">

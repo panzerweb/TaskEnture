@@ -44,10 +44,7 @@
         <div class="sidebar col-auto col-md-3 col-xl-2 px-sm-2 px-0">
             <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
                 <a href="#" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-light text-decoration-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-bootstrap-fill d-block d-lg-none" viewBox="0 0 16 16">
-                        <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375z"/>
-                        <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396z"/>
-                    </svg>
+                    <img src="../assets/logo/TaskentureLogo(W).png" alt="" width="50" class="d-block d-sm-none">
                     <span class="fs-3 fw-bold text-warning d-none d-sm-inline">Dashboard</span>
                 </a>
                 <span class="fs-4 d-none d-lg-block mb-3">
@@ -70,20 +67,14 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link px-0 align-middle text-light">
+                        <a href="../starred.php" class="nav-link px-0 align-middle text-light">
                             <i class="fs-4 bi bi-star-fill"></i><span class="ms-2 d-none d-sm-inline">Starred</span> 
                         </a>
                     </li>
                     <li class="nav-item">
-                        <div class="dropdown">
-                            <a class="nav-link px-0 align-middle dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fs-4 bi-people"></i><span class="ms-2 d-none d-sm-inline">Labels</span> 
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-                                <li><a class="dropdown-item" href="#">Personal</a></li>
-                                <li><a class="dropdown-item" href="#">Professional</a></li>
-                            </ul>
-                        </div>
+                        <a href="../label.php" class="nav-link px-0 align-middle text-light">
+                            <i class="fs-4 bi-people"></i><span class="ms-2 d-none d-sm-inline">Labels</span> 
+                        </a>
                     </li>
                 </ul>
                 <hr>
@@ -94,10 +85,10 @@
                     <?php
                         // Image presentation
                         if ($image == null) {
-                            echo "<img src='../assets/img/no-photo.png' alt='No Image' style='width: 150px; height: 150px; object-fit: cover; border-radius: 50%;'>
-                                <p class='text-center'>No Image Found</p>";
+                            echo "<img src='../assets/img/no-photo.png' alt='No Image' class='profile-img no-photo'>
+                                ";
                         } else {
-                            echo "<img src='../assets/img/" . $image . "' style='width: 5vw; height: 5vw; max-width: 300px; max-height: 300px; object-fit: cover; border-radius: 50%; border:2px solid #121212; padding: 0;'>";
+                            echo "<img src='../assets/img/" . $image . "' class='profile-img uploaded-img'>";
                         }
                     ?>
                         <span class="d-none d-sm-inline mx-1">

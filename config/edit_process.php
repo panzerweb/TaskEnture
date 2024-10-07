@@ -68,7 +68,7 @@
     // Display errors if there are any
     if (!empty($error)) {
         foreach ($error as $err) {
-            echo '<p class="errmsg">' . $err . '</p>';
+            echo '<p class="errmsg text-light">' . $err . '</p>';
         }
     }
 
