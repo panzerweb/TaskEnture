@@ -52,10 +52,12 @@
                             <input type="password" name="password" id="password" class="form-control" required="">
                         </div>
 
-                        <button type="submit" name="login" class="btn form_btn w-100 mt-3 mb-2">Login</button>
-                        <p class="text-center">
+                        <button type="submit" name="login" class="btn form_btn w-100 mt-3 mb-4">Login</button>
+
+                        <!-- <p class="text-center">
                             <a href="./forgot_password.php" class="text-decoration-none text-warning forgot-password">Forgot Password?</a>
-                        </p>
+                        </p> -->
+                        
                         <p class="text-center">Don't have an account?
                             <a href="./registration.php" class="mx-1 text-decoration-none text-warning">Signup</a>
                         </p>

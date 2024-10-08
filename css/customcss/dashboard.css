@@ -14,6 +14,31 @@
     --darken-tertiary: #dad9d9c5;
 }
 
+body{
+    width: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--primary);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--lighten-secondary);
+}
+
+
 /* Sidebar */
 .sidebar{
     background: var(--primary) !important;

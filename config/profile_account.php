@@ -1,6 +1,6 @@
 <?php include("../templates/profile_header.php") ?>
 
-    <div class="col profile-col">
+    <div class="col profile-col" style="max-height: 100vh; overflow-y: auto;">
         <div class="row py-3 title-header">
             <h1 class="align-self-start">Profile Details</h1>
         </div>
@@ -81,8 +81,33 @@
                         <a href="change_password.php" class="mx-2 text-decoration-none">
                             <button type="submit" class="btn btn-warning w-100 my-1">Change Password</button>
                         </a>
-                </div>         
+                </div>   
+                
+                <!-- Table Showing the Personal Details -->
+                <div class="table-responsive small my-5">
+                    <table class="table table-striped table-hover">
+                        <caption class="text-light">Logged User's registered information</caption>
+                        <tr>
+                            <th>First Name:</th>
+                            <td><?php echo $first_name ?></td>
+                        </tr>
+                        <tr>
+                            <th>Last Name:</th>
+                            <td><?php echo $last_name ?></td>
+                        </tr>
+                        <tr>
+                            <th>Username:</th>
+                            <td><?php echo $username ?></td>
+                        </tr>
+                        <tr>
+                            <th>Email Address:</th>
+                            <td><?php echo $email ?></td>
+                        </tr>
+                    </table> 
+                </div>  
             </div>
+
+            
         </div>
     </div>
             

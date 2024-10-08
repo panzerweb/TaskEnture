@@ -1,3 +1,8 @@
+<!-- FEATURE IS YET TO BE IMPLEMENTED -->
+<!-- Due to limited functions of Local Server Xampp to send to existing Gmail Account, we will hold this
+    Feature until further notice-->
+
+    
 <?php
     //Work together with Database
     require_once("./database.php");
