@@ -70,3 +70,52 @@ if (!empty($error)) {
         echo '<p class="errmsg">' . $err . '</p>';
     }
 }
+
+
+
+
+             <!-- Modal For Editing Task-->
+             <form action="./edit_task.php" method="post">
+                <!-- Modal -->
+                <div class="modal fade" id="editingModal" tabindex="-1" aria-labelledby="editingModalSample" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content text-light">
+                        <div class="modal-header text-warning">
+                            <h1 class="modal-title fs-3" id="editingModalSample">Update your Task</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row mb-3">
+                                <label for="taskname" class="col-sm-2 col-form-label">Task</label>
+                                <div class="col-sm-12">
+                                <input type="text" class="form-control" id="taskname" name="taskname" placeholder="Add your Task">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="task_description" class="form-label">Description</label>
+                                <div class="col-sm-12">
+                                    <textarea class="form-control w-100" id="task_description" name="task_description" rows="3" placeholder="Description"></textarea>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="labels" class="form-label">Category</label>
+                                <div class="col-sm-12">
+                                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                                    <label class="btn btn-outline-warning" for="btnradio1">Personal</label>
+
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                    <label class="btn btn-outline-warning" for="btnradio2">Professional</label>
+                                    </div>                                
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-success">Update Task</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+             </form>

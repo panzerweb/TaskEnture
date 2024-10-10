@@ -83,28 +83,56 @@
                         </a>
                 </div>   
                 
-                <!-- Table Showing the Personal Details -->
-                <div class="table-responsive small my-5">
-                    <table class="table table-striped table-hover">
-                        <caption class="text-light">Logged User's registered information</caption>
-                        <tr>
-                            <th>First Name:</th>
-                            <td><?php echo $first_name ?></td>
-                        </tr>
-                        <tr>
-                            <th>Last Name:</th>
-                            <td><?php echo $last_name ?></td>
-                        </tr>
-                        <tr>
-                            <th>Username:</th>
-                            <td><?php echo $username ?></td>
-                        </tr>
-                        <tr>
-                            <th>Email Address:</th>
-                            <td><?php echo $email ?></td>
-                        </tr>
+                <!-- Table for Badges-->
+                <div class="table-responsive small my-3">
+                    <table class="table table-striped table-hover align-middle text-center">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">Badge</th>
+                                <th scope="col">Badge Name</th>
+                                <th scope="col">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="../assets/img/badges/Rookie.svg" alt="">
+                                </td>
+                                <td>
+                                    <h2>Rookie</h2>
+                                </td>
+                                <td>
+                                    Completed First Task
+                                </td>
+                            </tr>
+                        </tbody>
                     </table> 
                 </div>  
+                <!-- Table for Achievements-->
+                <div class="table-responsive small my-3">
+                    <table class="table table-striped table-hover align-middle text-center">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">Achievement</th>
+                                <th scope="col">Achievement Name</th>
+                                <th scope="col">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="../assets/img/badges/New Mindset.svg" alt="">
+                                </td>
+                                <td>
+                                    <h2>New Mindset</h2>
+                                </td>
+                                <td>
+                                    First Task Achievement
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                </div> 
             </div>
 
             
