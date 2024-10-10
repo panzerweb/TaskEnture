@@ -9,7 +9,7 @@
         <!-- Main Content With the Tables -->
         <div class="col main-content">
             <div class="row py-3 title-header">
-                <h1 class="align-self-start" style="font-size: 45px;">My List</h1>
+                <h1 class="align-self-start">My List</h1>
             </div>
             <!-- Form for Searching Task -->
             <form action="search_task.php" method="post">
@@ -25,7 +25,15 @@
             </form>
 
             <div class="table-responsive small w-100 mx-auto">
-                <table class="table table-dark table-striped table-sm text-center align-middle w-100 table-condensed" id="myTable">
+                <table class="table table-dark table-striped table-sm text-center align-middle w-100 table-bordered border-dark rounded-3" id="myTable">
+                    <thead class="table-dark">
+                        <tr>
+                            <td>Mark</td>
+                            <td>Task</td>
+                            <td>Due Date</td>
+                            <td>Action</td>
+                        </tr>
+                    </thead>
                     <tbody>
                         <tr class="table-info">
                             <td class="markdone">
@@ -35,61 +43,16 @@
                                 </label>
                             </td>
                             <td class="fs-6 fw-bold" id="task-name">Lorem ipsum dolor sit amet.</td>
+                            <td>14/10/2024</td>
                             <td class="btn-behavior">
                                 <!-- Access the updating modal -->
-                                <?php include("./templates/edit_modal.php") ?>
+                                <?php include("./templates/function_buttons.php") ?>
                             </td>
                         </tr>
                         
                     </tbody>
                 </table>
             </div>
-
-             <!-- Modal For Editing Task-->
-             <form action="./edit_task.php" method="post">
-                <!-- Modal -->
-                <div class="modal fade" id="editingModal" tabindex="-1" aria-labelledby="editingModalSample" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content text-light">
-                        <div class="modal-header text-warning">
-                            <h1 class="modal-title fs-3" id="editingModalSample">Update your Task</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row mb-3">
-                                <label for="taskname" class="col-sm-2 col-form-label">Task</label>
-                                <div class="col-sm-12">
-                                <input type="text" class="form-control" id="taskname" name="taskname" placeholder="Add your Task">
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <label for="task_description" class="form-label">Description</label>
-                                <div class="col-sm-12">
-                                    <textarea class="form-control w-100" id="task_description" name="task_description" rows="3" placeholder="Description"></textarea>
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <label for="labels" class="form-label">Category</label>
-                                <div class="col-sm-12">
-                                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                                    <label class="btn btn-outline-warning" for="btnradio1">Personal</label>
-
-                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                                    <label class="btn btn-outline-warning" for="btnradio2">Professional</label>
-                                    </div>                                
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-success">Update Task</button>
-                        </div>
-                    </div>
-                </div>
-                </div>
-             </form>
 
             <!-- Add Task for Modal Pop Up -->
             <button class="btn btn-warning rounded-pill p-3 position-fixed bottom-0 end-0 m-4 border border-black" data-bs-toggle="modal" data-bs-target="#addingModal">

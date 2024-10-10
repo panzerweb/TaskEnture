@@ -2,7 +2,7 @@
 
 <div class="col main-content">
     <div class="row py-3 title-header">
-        <h1 class="align-self-start" style="font-size: 45px;">Category</h1>
+        <h1 class="align-self-start">Category</h1>
     </div>
 
     <button type="button" class="btn btn-outline-warning my-3 active filter-button" id="all-btn">All</button>

@@ -3,7 +3,7 @@
 <!-- Main Content With the Tables -->
 <div class="col main-content">
             <div class="row py-3 title-header">
-                <h1 class="align-self-start" style="font-size: 45px;" >Starred List</h1>
+                <h1 class="align-self-start">Starred List</h1>
             </div>
             <!-- Form for Searching Task -->
             <form action="search_task.php" method="post">
