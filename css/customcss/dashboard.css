@@ -41,6 +41,7 @@ body{
 
 /* Sidebar */
 .sidebar{
+    transition: margin-left 0.3s;
     background: var(--primary) !important;
 }
 .nav .nav-item{
@@ -59,14 +60,18 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
 }
 .title-header{
-    background-color: #401f71;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='%236f44ec' fill-opacity='0.4'%3E%3Cpath d='M12 0h18v6h6v6h6v18h-6v6h-6v6H12v-6H6v-6H0V12h6V6h6V0zm12 6h-6v6h-6v6H6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6V6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+    height: 90px;
+    text-align: right;
+    background-color: #ffaa00;
+    padding: 10px;
     color: var(--tertiary);
 }
 .title-header h1{
-    font-size: clamp(1rem, 10vw, 3.5rem); 
+    font-size: clamp(1rem, 5vw, 2rem); 
+    color: var(--tertiary);
 }
 
 /* Button and Input for adding task */
