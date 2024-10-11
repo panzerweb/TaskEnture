@@ -39,7 +39,7 @@ body{
 }
 
 .profile-col{
-    background: var(--darken-tertiary) url("./background/bg-1.svg") !important;
+    background: var(--tertiary) url("./background/bg-1.svg") !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

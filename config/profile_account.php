@@ -1,7 +1,7 @@
 <?php include("../templates/profile_header.php") ?>
 
     <div class="col profile-col" style="max-height: 100vh; overflow-y: auto;">
-        <div class="row py-3 title-header">
+        <div class="row py-2 title-header">
             <h1 class="align-self-start">Profile Details</h1>
         </div>
 

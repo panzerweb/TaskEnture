@@ -6,7 +6,7 @@
 ?>
 
 <div class="col profile-col">
-    <div class="row py-3 title-header">
+    <div class="row py-2 title-header">
         <h1 class="align-self-start">Edit Profile</h1>
     </div>
     <div class="row justify-content-center align-items-center text-center mx-auto my-3">
