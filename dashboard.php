@@ -23,7 +23,7 @@
                     </button>
                 </div>
             </form>
-
+        
             <div class="table-responsive small w-100 mx-auto">
                 <table class="table table-dark table-striped table-sm text-center align-middle w-100 table-bordered border-dark rounded-3" id="myTable">
                     <thead class="table-dark">
