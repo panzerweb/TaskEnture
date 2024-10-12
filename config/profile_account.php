@@ -52,7 +52,7 @@
                 <!-- Table Showing the Personal Details -->
                 <div class="table-responsive small">
                     <table class="table table-striped table-hover">
-                        <caption class="text-light">Logged User's registered information</caption>
+                        <caption class="text-dark">Logged User's registered information</caption>
                         <tr>
                             <th>First Name:</th>
                             <td><?php echo $first_name ?></td>

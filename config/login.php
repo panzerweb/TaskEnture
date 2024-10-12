@@ -67,6 +67,14 @@
         </div>
     </div>
 
+    <footer>
+        <div class="footer-content text-center text-light">
+            <p style="font-size: 15px"> © 2024 Taskenture. IT2 Institute of Computing - DSNC. All rights reserved.</p>
+        </div>
+    </footer>
+    
+   
+
     <!-- Bootstrap JavaScript and JavaScript Vanilla-->
     <script src="../css/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
     <script src="../css/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
@@ -75,4 +83,5 @@
     <script src="../js/app.js"></script>
 
 </body>
+
 </html>
