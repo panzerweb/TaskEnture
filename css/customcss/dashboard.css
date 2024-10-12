@@ -91,7 +91,7 @@ body{
     color: #121212;
 }
 
-/* Container for Editing Page */
+/** Styling for Editing Page */
 .editing-container{
     background: var(--tertiary);
     border-radius: 5px;
@@ -104,6 +104,18 @@ body{
 .edit-group{
     border-radius: 5px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+/** Contact page Styling */
+.contact-page-row svg{
+    background-color: var(--tertiary);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.contact-page-row svg:hover{
+    background: var(--secondary);
+    color: var(--tertiary);
 }
 
 /* Inputs and Table */

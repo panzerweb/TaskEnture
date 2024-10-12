@@ -77,12 +77,12 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link px-0 align-middle text-light">
+                        <a href="../trash_page.php" class="nav-link px-0 align-middle text-light">
                             <i class="fs-4 bi bi-trash-fill"></i><span class="ms-2 d-none d-sm-inline">Trash</span> 
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link px-0 align-middle text-light">
+                        <a href="../contact_page.php" class="nav-link px-0 align-middle text-light">
                             <i class="fs-4 bi bi-telephone-fill"></i><span class="ms-2 d-none d-sm-inline">Contact</span> 
                         </a>
                     </li>
