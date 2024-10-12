@@ -388,8 +388,7 @@
 
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2024 Copyright:
-            <a class="text-white text-decoration-none" href="https://mdbootstrap.com/">BSIT2B</a>
+            © 2024 Taskenture. IT2 Institute of Computing - DSNC. All rights reserved.
         </div>
     </footer>
     </div>
