@@ -18,7 +18,7 @@
             <tbody>
                 <tr class="custom-row">
                     <td colspan="4">
-                        <img src="./assets/img/norecord.svg" alt="">
+                        <img src="./assets/img/norecord.svg" alt="" style="max-width: 600px;width: 100%;">
                     </td>
                 </tr>
             </tbody>
