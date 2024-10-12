@@ -4,7 +4,7 @@
     <div class="row py-2 title-header">
         <h1 class="align-self-start">Contact Us</h1>
     </div>
-    <div class="row my-4 text-center contact-page-row">
+    <div class="row my-4 text-center contact-page-row mx-auto py-3">
         <div class="col-12 col-lg-4">
             <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-geo-alt-fill p-3 rounded-pill" viewBox="0 0 16 16">
                 <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
@@ -24,7 +24,7 @@
             <p>+63 909 077 4336</p>
 
             <h5 class="mt-3 fw-bold">Devicore</h5>
-            <p>+63 909 077 4336</p>
+            <p>+63 928 635 1531</p>
         </div>
         <div class="col-12 col-lg-4">
             <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-envelope-at-fill p-3 rounded-pill" viewBox="0 0 16 16">
@@ -35,6 +35,9 @@
             <h2 class="my-2 fw-bold">Email</h2>
             <h5 class="mt-3 fw-bold">Taskenture Official Email</h5>
             <p>admin@taskenture.com</p>
+
+            <h5 class="mt-3 fw-bold">Panzerweb Email</h5>
+            <p>panzerweb2023@gmail.com</p>
         </div>
     </div>
 </div>
