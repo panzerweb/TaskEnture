@@ -174,67 +174,6 @@
         </div>
     </nav>
 
-<<<<<<< Updated upstream
-    <div class="container-lg">
-        <div class="row justify-content-center align-items-start">
-            <!-- Brand Title and Image -->
-            <div class="col-12 col-md-6 col-lg-6 mt-5 brand">
-                <div class="d-flex justify-content-center">
-                    <img src="../assets/logo/Taskenturelogo2.svg" alt="" class="mx-auto">
-                </div>
-                <h1 class="fw-bold mx-auto">Stop Procrastinating and Master your Task</h1>
-                <p class="lead text-light mx-auto">Create Task, do them, and earn badges and achievements along the way as your productivity soars high</p>
-            </div>
-
-            <!-- Form for Signup -->
-            <div class="sign-up col-12 col-md-6 col-lg-6 text-light my-5 rounded-4">
-                <!-- Success Message -->
-                 <?php if(isset($insertStatusDone)){ ?>
-                        <dialog id="uploadDialog"> <!-- 'open' attribute makes the dialog visible -->
-                            <div class="dialog-content">
-                                <p class="success-mess">Successfully Registered!</p>
-                                <a href="login.php" class="btn btn-success">Login here...</a>
-                            </div>
-                        </dialog>
-                <?php }else{?>
-                    <div class="signup-form px-4">
-                        <form action="" method="post">
-                            <h1 class="lead display-6 text-center pt-5 pb-3 fw-bold">Sign Up For Free</h1>
-                            <span class="text-light">Username must be 1 to 20 characters, containing only letters a to z, numbers 0 to 9, hyphens, or underscores, and cannot include any inappropriate terms.</span>
-                            <div class="form-group my-4">
-                                <label class="label_txt">First Name</label>
-                                <input type="text" class="form-control" name="first_name" value="<?php if(isset($error)){ echo $_POST['first_name'];} ?>" required="">
-                            </div>
-
-                            <div class="form-group my-4">
-                                <label class="label_txt">Last Name</label>
-                                <input type="text" class="form-control" name="last_name" value="<?php if(isset($error)){ echo $_POST['last_name'];} ?>" required="">
-                            </div>
-
-                            <div class="form-group my-4">
-                                <label class="label_txt">Username</label>
-                                <input type="text" class="form-control" name="username" value="<?php if(isset($error)){ echo $_POST['username'];} ?>" required="">
-                            </div>
-
-                            <div class="form-group my-4">
-                                <label class="label_txt">Email</label>
-                                <input type="email" class="form-control" name="email" value="<?php if(isset($error)){ echo $_POST['email'];} ?>" required="">
-                            </div>
-
-                            <div class="form-group my-4">
-                                <label class="label_txt">Password</label>
-                                <input type="password" name="password" class="form-control" required="">
-                            </div>
-
-                            <div class="form-group my-4">
-                                <label class="label_txt">Confirm Password</label>
-                                <input type="password" name="passwordConfirm" class="form-control" required="">
-                            </div>
-
-                            <button type="submit" name="register" class="btn form_btn w-100 mt-3 mb-4">Sign Up</button>
-                            <p class="text-center pb-4">Have an account? <a href="login.php" class="text-decoration-none text-warning">Log in</a></p>                            
-                        </form>
-=======
     <section>
         <div class="container-lg">
             <div class="row justify-content-center align-items-start">
@@ -242,7 +181,6 @@
                 <div class="col-12 col-md-12 col-lg-6 mt-5 brand">
                     <div class="d-flex justify-content-center">
                         <img src="../assets/logo/Taskenturelogo2.svg" alt="" class="mx-auto">
->>>>>>> Stashed changes
                     </div>
                     <h1 class="fw-bold mx-auto">Stop Procrastinating and Master your Task</h1>
                     <p class="lead text-light mx-auto">Create Task, do them, and earn badges and achievements along the way as your productivity soars high</p>
@@ -297,12 +235,12 @@
                                 <p class="text-center pb-4">Have an account? <a href="login.php" class="text-decoration-none text-warning">Log in</a></p>                            
                             </form>
                         </div>
-                        <?php }?>
+                        <?php } ?>
+
                 </div>
             </div>
         </div>
     </section>
-    
     <!-- Remaining Section part -->
 
     <section class="pt-5 mt-5">
@@ -406,13 +344,60 @@
 
 
 
+                 <!-- Footer Section for Registration -->
+    <!-- Footer -->
+    <div id="foot">
+    <footer class="text-center text-lg-start text-white">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-between p-3" style="background-color: #6351ce">
+        <!-- Left -->
+        <div class="me-5">
+            <span>Get connected with us on social networks:</span>
+        </div>
+        </section>
+        <!-- Section: Social media -->
 
+        <!-- Section: Links -->
+        <section class="">
+        <div class="container text-center text-md-start mt-2">
+            <!-- Grid row -->
+            <div class="row mt-3 justify-content-between">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mb-2">
+                <!-- Content -->
+                <h3 class="text-uppercase fw-bold"><span style="color: #FDAF7B">Task</span>enture</h3>
+                <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 10rem; background-color: #7c4dff; height: 2px">
+                <p>"Success is the sum of small efforts, repeated day in and day out. Taking notes is just one of those small efforts that leads to big achievements."</p>
+            </div>
+            <!-- Grid column -->
 
-    <footer>
-        <div class="footer-content text-center text-light">
-            <p style="font-size: 15px"> © 2024 Taskenture. IT2 Institute of Computing - DSNC. All rights reserved.</p>
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Contacts:</h6>
+                <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 80px; background-color: #7c4dff; height: 2px">
+                <p><i class="bi bi-home mr-3"></i> Email: <a href="#" class="text-white text-decoration-none">Taskenture@gmail.com</a></p>
+                <p><i class="fas fa-envelope mr-3"></i> Facebook: <a href="#" class="text-white text-decoration-none">Facebook.com/Taskenture</a></p>
+            </div>
+            <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        </section>
+        <!-- Section: Links -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2024 Copyright:
+            <a class="text-white text-decoration-none" href="https://mdbootstrap.com/">BSIT2B</a>
         </div>
     </footer>
+    </div>
+
+
+
+
+
 
     <!-- Bootstrap JavaScript and JavaScript Vanilla-->
     <script src="../css/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
