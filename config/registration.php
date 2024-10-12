@@ -196,7 +196,7 @@
                             </div>
                         </dialog>
                 <?php }else{?>
-                    <div class="signup-form px-3">
+                    <div class="signup-form px-4">
                         <form action="" method="post">
                             <h1 class="lead display-6 text-center pt-5 pb-3 fw-bold">Sign Up For Free</h1>
                             <span class="text-light">Username must be 1 to 20 characters, containing only letters a to z, numbers 0 to 9, hyphens, or underscores, and cannot include any inappropriate terms.</span>
@@ -239,6 +239,11 @@
         </div>
     </div>
 
+    <footer>
+        <div class="footer-content text-center text-light">
+            <p style="font-size: 15px"> © 2024 Taskenture. IT2 Institute of Computing - DSNC. All rights reserved.</p>
+        </div>
+    </footer>
 
     <!-- Bootstrap JavaScript and JavaScript Vanilla-->
     <script src="../css/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>

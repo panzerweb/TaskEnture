@@ -23,7 +23,7 @@
                     </button>
                 </div>
             </form>
-
+        
             <div class="table-responsive small w-100 mx-auto">
                 <table class="table table-sm text-center align-middle w-100 table-bordered border-dark" id="myTable">
                     <thead class="table-dark">
@@ -42,7 +42,7 @@
                                 <i class="bi bi-check-circle"></i>
                                 </label>
                             </td>
-                            <td class="fs-6 fw-bold" id="task-name">Lorem ipsum dolor sit amet.</td>
+                            <td class="fs-6 fw-bold" id="task-name">Discrete Mathematics: Design Plate Number 1.</td>
                             <td>14/10/2024</td>
                             <td class="btn-behavior">
                                 <!-- Access the updating modal -->
@@ -109,5 +109,6 @@
         
     </div>
 </div>
+
 
 <?php include("./templates/footer.php") ?>
