@@ -174,6 +174,7 @@
         </div>
     </nav>
 
+<<<<<<< Updated upstream
     <div class="container-lg">
         <div class="row justify-content-center align-items-start">
             <!-- Brand Title and Image -->
@@ -233,11 +234,179 @@
                             <button type="submit" name="register" class="btn form_btn w-100 mt-3 mb-4">Sign Up</button>
                             <p class="text-center pb-4">Have an account? <a href="login.php" class="text-decoration-none text-warning">Log in</a></p>                            
                         </form>
+=======
+    <section>
+        <div class="container-lg">
+            <div class="row justify-content-center align-items-start">
+                <!-- Brand Title and Image -->
+                <div class="col-12 col-md-12 col-lg-6 mt-5 brand">
+                    <div class="d-flex justify-content-center">
+                        <img src="../assets/logo/Taskenturelogo2.svg" alt="" class="mx-auto">
+>>>>>>> Stashed changes
                     </div>
-                    <?php }?>
+                    <h1 class="fw-bold mx-auto">Stop Procrastinating and Master your Task</h1>
+                    <p class="lead text-light mx-auto">Create Task, do them, and earn badges and achievements along the way as your productivity soars high</p>
+                </div>
+
+                <!-- Form for Signup -->
+                <div class="sign-up col-12 col-md-12 col-lg-6 text-light my-5 rounded-4">
+                    <!-- Success Message -->
+                    <?php if(isset($insertStatusDone)){ ?>
+                            <dialog id="uploadDialog"> <!-- 'open' attribute makes the dialog visible -->
+                                <div class="dialog-content">
+                                    <p class="success-mess">Successfully Registered!</p>
+                                    <a href="login.php" class="btn btn-success">Login here...</a>
+                                </div>
+                            </dialog>
+                    <?php }else{?>
+                        <div class="signup-form px-4">
+                            <form action="" method="post">
+                                <h1 class="lead display-6 text-center pt-5 pb-3 fw-bold">Sign Up For Free</h1>
+                                <span class="text-light">Username must be 1 to 20 characters, containing only letters a to z, numbers 0 to 9, hyphens, or underscores, and cannot include any inappropriate terms.</span>
+                                <div class="form-group my-4">
+                                    <label class="label_txt">First Name</label>
+                                    <input type="text" class="form-control" name="first_name" value="<?php if(isset($error)){ echo $_POST['first_name'];} ?>" required="">
+                                </div>
+
+                                <div class="form-group my-4">
+                                    <label class="label_txt">Last Name</label>
+                                    <input type="text" class="form-control" name="last_name" value="<?php if(isset($error)){ echo $_POST['last_name'];} ?>" required="">
+                                </div>
+
+                                <div class="form-group my-4">
+                                    <label class="label_txt">Username</label>
+                                    <input type="text" class="form-control" name="username" value="<?php if(isset($error)){ echo $_POST['username'];} ?>" required="">
+                                </div>
+
+                                <div class="form-group my-4">
+                                    <label class="label_txt">Email</label>
+                                    <input type="email" class="form-control" name="email" value="<?php if(isset($error)){ echo $_POST['email'];} ?>" required="">
+                                </div>
+
+                                <div class="form-group my-4">
+                                    <label class="label_txt">Password</label>
+                                    <input type="password" name="password" class="form-control" required="">
+                                </div>
+
+                                <div class="form-group my-4">
+                                    <label class="label_txt">Confirm Password</label>
+                                    <input type="password" name="passwordConfirm" class="form-control" required="">
+                                </div>
+
+                                <button type="submit" name="register" class="btn form_btn w-100 mt-3 mb-4">Sign Up</button>
+                                <p class="text-center pb-4">Have an account? <a href="login.php" class="text-decoration-none text-warning">Log in</a></p>                            
+                            </form>
+                        </div>
+                        <?php }?>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+    
+    <!-- Remaining Section part -->
+
+    <section class="pt-5 mt-5">
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="#401F71" style="transform: scaleY(-1);"><path d="M0 0v60c9 0 18-3 25-10 13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s37 13 50 0c14-14 37-14 50 0 7 7 16 10 25 10V0H0Z"></path></svg>
+
+        <div class="container-fluid remaining-container">
+            <div class="container-lg">
+                <h1 class="fw-bold">Objective</h1>
+                <div class="row mb-5 align-items-center">
+                    <div class="col-12 col-lg-5">
+                        <img src="../assets/img/objective.svg" class="w-100 p-3">
+                    </div>
+                    <div class="col-12 col-lg-7">
+                        <h2 class="fw-bold fs-1 mb-3">Purpose of this Website</h2>
+                        <p class="text-light">
+                            Taskenture is a free habit-building and 
+                            ToDo Web Application that treats your real life like a game. 
+                            With in-game rewards to motivate you, 
+                            Taskenture can help you achieve your goals to become healthy, hard-working, and happy.
+                        </p>
+                        <p class="text-light">
+                            Health and Fitness, School and Work, or maybe your personal life? Taskenture is here to help you manage it all!
+                            There are only a handful of todo apps in the World Wide Web that makes your tasking
+                            a GAMING!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="fw-bold pt-5 pb-4 text-center">Key Features</h1>
+                    <p class="text-center text-light w-75 mx-auto">
+                        Taskenture lets you have this features so that our users can 
+                        enjoy our simple web application to its fullest. And our team
+                        is working our best to optimize the website as we are in its development.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-5 pb-5 key-features-card">
+                <div class="col-12 col-lg-4 mb-3">
+                    <div class="container-lg text-center text-light">
+                        <img src="../assets/img/simpleui.svg"  alt="" class="w-100">
+                        <h3 class="mt-5 mb-3">Friendly User Interface</h3>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Totam est eos, repudiandae minus pariatur dolorem porro dolore mollitia.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mb-3">
+                    <div class="container-lg text-center text-light">
+                        <img src="../assets/img/taskmanage.svg"  alt="" class="w-100">
+                        <h3 class="mt-5 mb-3">Task Management</h3>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Totam est eos, repudiandae minus pariatur dolorem porro dolore mollitia.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mb-3">
+                    <div class="container-lg text-center text-light">
+                        <img src="../assets/img/getreward.svg"  alt="" class="w-100">
+                        <h3 class="mt-5 mb-3">Friendly User Interface</h3>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Totam est eos, repudiandae minus pariatur dolorem porro dolore mollitia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gamify Section -->
+            <div class="row justify-content-center align-items-center px-3" style="padding-top: 10rem; padding-bottom: 10rem;">
+                <div class="col-12 col-lg-4">
+                    <img src="../assets/img/award.svg"  alt="" class="text-center w-100">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h1 class="fw-bold fs-1 mb-3">Badges and Achievements</h1>
+                    <p class="text-light text-left">
+                        Earn Badges and Achievements as you complete your task and hoard everything.
+                        Show off to your friends, and most important? Show yourself that you are capable.
+                        Taskenture hopes that with this badges and achievements, we are able to help you
+                        stay motivated and on the go for every task in your life.
+                    </p>
+
+                    <!-- /* From Uiverse.io by reshades */  -->
+                    <a href="#" class="gamify-btn btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.65-6.75M19.5 12l-6.75 6.75"></path>
+                        </svg>
+                        <div class="text">
+                            Badges and Achievements
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
 
     <footer>
         <div class="footer-content text-center text-light">

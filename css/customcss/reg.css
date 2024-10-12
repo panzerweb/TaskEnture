@@ -13,12 +13,11 @@
     --lighten-secondary: #f78f4b;
     --darken-tertiary: #dad9d9c5;
 }   
+
 body{
     background: var(--lighten-primary) url("./background/bg-2.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
+
 /* Navbar */
 .navbar{
     background: var(--primary) !important;
@@ -179,6 +178,62 @@ dialog::backdrop {
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black backdrop */
 }
 
+
+/* Objective Section */
+.remaining-container{
+    background-color: var(--primary) !important;
+}
+.remaining-container h1{
+    font-size: clamp(2.5rem, 3.5vw, 4rem); 
+    color: var(--lighten-secondary);
+}
+.remaining-container h2{
+    font-size: clamp(2.5rem, 3.5vw, 4rem); 
+    color: var(--tertiary);
+}
+
+
+/* From Uiverse.io by reshades */ 
+.gamify-btn {
+    background-color: var(--lighten-primary);
+    color: var(--tertiary);
+    width: auto;
+    height: 2.9em;
+    border: var(--tertiary) 0.2em solid;
+    border-radius: 11px;
+    text-align: right;
+    transition: all 0.3s ease;
+  }
+  
+  .gamify-btn:hover {
+    background-color: var(--primary);
+    cursor: pointer;
+    color: var(--lighten-secondary);
+    border: var(--lighten-secondary) 0.2em solid;
+  }
+  
+  .gamify-btn svg {
+    width: 1.6em;
+    margin: 0em 0.2em 1em;
+    position: absolute;
+    display: flex;
+    transition: all 0.3s ease;
+  }
+  
+  .gamify-btn:hover svg {
+    transform: translateX(10px);
+    color: var(--lighten-secondary);
+  }
+  
+  .text {
+    margin: 0 2.5em;
+  }
+
+
+
+footer{
+    background: var(--primary);
+}
 /* todo Mobile Devices */
 @media only screen and (max-width: 767px){
     .sign-up{
@@ -186,5 +241,19 @@ dialog::backdrop {
     }
     .brand h1, .brand p{
         text-align: center;
+    }
+}
+/* todo Tablet Devices */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .sign-up{
+        width: calc(100% - 5rem);
+    }
+    .brand h1, .brand p{
+        text-align: center;
+    }
+
+    .key-features-card img {
+        width: calc(90% - 7rem) !important; /* Adjusted to make the images smaller */
+        max-width: 90%; /* Added max-width to ensure the images don't stretch */
     }
 }
