@@ -161,6 +161,7 @@
                             <ul class="dropdown-menu dropdown-menu-dark">
                                 <li><a class="dropdown-item" href="#">About</a></li>
                                 <li><a class="dropdown-item" href="#">FAQs</a></li>
+                                <li><a class="dropdown-item" href="./subpages/contact.php">Contacts</a></li>
                             </ul>
                         </li>
                     </ul>
