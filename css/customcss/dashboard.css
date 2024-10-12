@@ -56,7 +56,7 @@ body{
 
 /* Main Content */
 .main-content{
-    background: var(--darken-tertiary) url("./background/bg-1.svg") !important;
+    background: var(--tertiary) url("./background/bg-1.svg") !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -66,7 +66,6 @@ body{
     text-align: right;
     background-color: #ffaa00;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='%23b05d26' fill-opacity='0.4'%3E%3Cpath d='M12 0h18v6h6v6h6v18h-6v6h-6v6H12v-6H6v-6H0V12h6V6h6V0zm12 6h-6v6h-6v6H6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6V6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
-    padding: 10px;
     color: var(--tertiary);
 }
 .title-header h1{
@@ -82,29 +81,63 @@ body{
 }
 .task-search{
     font-size: clamp(1rem, 2.5vw, 1.3rem); 
-    background: var(--primary) !important;
-    color: var(--secondary) !important;
+    background: var(--tertiary) !important;
+    color: #121212 !important;
 }
 .task-search:focus{
     background: var(--darken-tertiary);
 }
 .task-search::placeholder{
-    color: var(--secondary);
+    color: #121212;
+}
+
+/** Styling for Editing Page */
+.editing-container{
+    background: var(--tertiary);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    max-width: 1000px; /* Set a maximum width */
+    width: 100%; /* Full width of the parent container */
+    margin: 0 auto; /* Center align the container */
+}
+
+.edit-group{
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+/** Contact page Styling */
+.contact-page-row{
+    background: var(--primary);
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 5px;
+    color: var(--tertiary);
+}
+.contact-page-row svg{
+    background-color: var(--lighten-secondary);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.contact-page-row svg:hover{
+    background: var(--secondary);
+    color: var(--tertiary);
 }
 
 /* Inputs and Table */
 .input-group{
     border-radius: 5px;
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .table{
     border-collapse: collapse;
     overflow: hidden; /* Ensures content doesn't overflow out of the rounded corners */
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;   
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
-table#myTable tbody tr.table-info {
-    background-color: #401f71 !important;
+.table tbody tr.custom-row td {
+    background-color: var(--tertiary) !important;
 }
 
 .markdone{
@@ -140,24 +173,24 @@ table#myTable tbody tr.table-info {
 /* Default shady background for the filter buttons */
 .filter-button {
     background-color: rgba(247, 247, 111, 0.2); /* Shady yellow */
-    border-color: #ffc107; /* Bootstrap warning border color */
-    color: #121212; /* Bootstrap warning text color */
+    border-color: #191919; /* Bootstrap warning border color */
+    color: #000000; /* Bootstrap warning text color */
     transition: background-color 0.3s ease, color 0.3s ease;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;   
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px !important; 
 
 }
 
 /* Hover effect to give it more interaction feedback */
 .filter-button:hover {
-    background-color: #ffc107; /* Bootstrap warning background */
+    background-color: #191919; /* Bootstrap warning background */
     color: var(--tertiary); /* White text for contrast */
 }
 
 /* Active state, using Bootstrap's warning background */
 .filter-button.active {
-    background-color: #ffc107; /* Bootstrap warning background */
+    background-color: #191919; /* Bootstrap warning background */
     color: var(--tertiary); /* White text for contrast */
-    border-color: #ffc107; /* Match border with background */
+    border-color: #191919; /* Match border with background */
 }
 
 /* Focus state for keyboard navigation */

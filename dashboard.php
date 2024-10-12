@@ -8,7 +8,7 @@
 ?>
         <!-- Main Content With the Tables -->
         <div class="col main-content">
-            <div class="row py-3 title-header">
+            <div class="row py-2 title-header">
                 <h1 class="align-self-start">My List</h1>
             </div>
             <!-- Form for Searching Task -->
@@ -25,7 +25,7 @@
             </form>
         
             <div class="table-responsive small w-100 mx-auto">
-                <table class="table table-dark table-striped table-sm text-center align-middle w-100 table-bordered border-dark rounded-3" id="myTable">
+                <table class="table table-sm text-center align-middle w-100 table-bordered border-dark" id="myTable">
                     <thead class="table-dark">
                         <tr>
                             <td>Mark</td>
@@ -35,7 +35,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="table-info">
+                        <tr class="custom-row">
                             <td class="markdone">
                                 <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
                                 <label class="btn btn-outline-success" for="btncheck1">
