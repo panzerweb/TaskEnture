@@ -45,19 +45,13 @@
                     <img src="./assets/logo/TaskentureLogo(W).png" alt="" width="50" class="d-block d-sm-none">
                     <span class="fs-3 fw-bold text-warning d-none d-sm-inline">TaskEnture</span>
                 </a>
-                <span class="fs-6 d-none d-lg-block mb-5">
+                <span class="fs-4 d-none d-lg-block mb-5">
                     Hi, 
                     <?php
                         echo htmlspecialchars($username);
                     ?>
                 </span>
-                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link align-middle px-0 text-light">
-                            <i class="fs-4 bi-house"></i><span class="ms-2 d-none d-sm-inline">Home</span>
-                        </a>
-                    </li>
-                    
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">               
                     <li class="nav-item">
                         <a href="./dashboard.php" class="nav-link align-middle px-0 text-light">
                             <i class="fs-4 bi bi-list-columns"></i><span class="ms-2 d-none d-sm-inline">My List</span>
