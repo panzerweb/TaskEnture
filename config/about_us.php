@@ -5,6 +5,7 @@
     <title>TaskEnture | SignUp</title>
 
     <!-- Bootstrap and CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../css/bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/bootstrap-5.3.3-dist/css/bootstrap.css">
     <link rel="stylesheet" href="../css/customcss/reg.css">
@@ -120,6 +121,165 @@
                 </div>
             </div>
         </div>
+    </div>
+
+
+    <!-- Team -->
+    <section class="pt-5 mt-5">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="#401F71" style="transform: scaleY(-1);"><path d="M0 0v60c9 0 18-3 25-10 13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s37 13 50 0c14-14 37-14 50 0 7 7 16 10 25 10V0H0Z"></path></svg>
+        <div class="container-fluid team-container pb-5">
+            <div class="container-lg">
+                <div class="text-center py-3 pb-5">
+                    <h1 class="fw-bold">Our Team</h1>
+                    <p class="text-light w-75 mx-auto">
+                        A Group of young and wonderful developers worked together to make this project possible.
+                    </p>
+                </div>
+                <div class="row justify-content-center g-3">
+                    <div class="col">
+                        <div class="card shadow-sm border-0">
+                            <!-- Cover Photo -->
+                            <img src="../assets/img/carousel/bg1.jpg" class="card-img-top" alt="Cover Photo" style="height: 120px; object-fit: cover;">
+
+                            <!-- Profile Picture -->
+                            <div class="d-flex justify-content-center" style="margin-top: -40px;">
+                                <img src="../assets/img/developers/dev1 (1).jpg" class="rounded-circle border border-3" alt="Profile Picture" style="width: 100px; height: 100%;">
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Selwyn Villar</h5>
+                                <p class="card-subtitle mb-2 ">Project Leader</p>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <a href="#" class="btn btn-sm btn-outline-warning"><i class="bi bi-meta"></i></a>
+                                    <a href="#" class="btn btn-sm btn-outline-warning"><i class="bi bi-instagram"></i></a>
+                                    <a href="#" class="btn btn-sm btn-outline-warning"><i class="bi bi-tiktok"></i></a>
+                                    <a href="#" class="btn btn-sm btn-outline-warning"><i class="bi bi-github"></i></a>
+                                </div>
+                                <small class="text-light d-block mt-3">Joined: 2024</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm border-0">
+                            <!-- Cover Photo -->
+                            <img src="../assets/img/carousel/bg1.jpg" class="card-img-top" alt="Cover Photo" style="height: 120px; object-fit: cover;">
+
+                            <!-- Profile Picture -->
+                            <div class="d-flex justify-content-center" style="margin-top: -40px;">
+                                <img src="../assets/img/developers/dev2.jpg" class="rounded-circle border border-3" alt="Profile Picture" style="width: 100px; height: 100%;">
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Joseph Paquinol</h5>
+                                <p class="card-subtitle mb-2 ">Web Developer</p>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <a href="#" class="btn btn-sm btn-outline-warning"><i class="bi bi-meta"></i></a>
+                                    <a href="#" class="btn btn-sm btn-outline-warning"><i class="bi bi-instagram"></i></a>
+                                    <a href="#" class="btn btn-sm btn-outline-warning"><i class="bi bi-tiktok"></i></a>
+                                    <a href="#" class="btn btn-sm btn-outline-warning"><i class="bi bi-github"></i></a>
+                                </div>
+                                <small class="text-light d-block mt-3">Joined: 2024</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm border-0">
+                            <!-- Cover Photo -->
+                            <img src="../assets/img/carousel/bg1.jpg" class="card-img-top" alt="Cover Photo" style="height: 120px; object-fit: cover;">
+
+                            <!-- Profile Picture -->
+                            <div class="d-flex justify-content-center" style="margin-top: -40px;">
+                                <img src="../assets/img/developers/dev3.jpg" class="rounded-circle border border-3" alt="Profile Picture" style="width: 100px; height: 100%;">
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Cyrel Morales</h5>
+                                <p class="card-subtitle mb-2 ">Web Developer</p>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <a href="#" class="btn btn-sm btn-outline-warning"><i class="bi bi-meta"></i></a>
+                                    <a href="#" class="btn btn-sm btn-outline-warning"><i class="bi bi-instagram"></i></a>
+                                    <a href="#" class="btn btn-sm btn-outline-warning"><i class="bi bi-tiktok"></i></a>
+                                    <a href="#" class="btn btn-sm btn-outline-warning"><i class="bi bi-github"></i></a>
+                                </div>
+                                <small class="text-light d-block mt-3">Joined: 2024</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm border-0">
+                            <!-- Cover Photo -->
+                            <img src="../assets/img/carousel/bg1.jpg" class="card-img-top" alt="Cover Photo" style="height: 120px; object-fit: cover;">
+
+                            <!-- Profile Picture -->
+                            <div class="d-flex justify-content-center" style="margin-top: -40px;">
+                                <img src="../assets/img/developers/dev4.jpg" class="rounded-circle border border-3" alt="Profile Picture" style="width: 100px; height: 100%;">
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Stephanie Losabia</h5>
+                                <p class="card-subtitle mb-2 ">Graphic Designer</p>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <a href="#" class="btn btn-sm btn-outline-warning"><i class="bi bi-meta"></i></a>
+                                    <a href="#" class="btn btn-sm btn-outline-warning"><i class="bi bi-instagram"></i></a>
+                                    <a href="#" class="btn btn-sm btn-outline-warning"><i class="bi bi-tiktok"></i></a>
+                                    <a href="#" class="btn btn-sm btn-outline-warning"><i class="bi bi-github"></i></a>
+                                </div>
+                                <small class="text-light d-block mt-3">Joined: 2024</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <!-- Footer -->
+        <div id="foot">
+    <footer class="text-center text-lg-start text-white">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-between p-3" style="background-color: #6351ce">
+        <!-- Left -->
+        <div class="me-5">
+            <span>Get connected with us on social networks:</span>
+        </div>
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links -->
+        <section class="">
+        <div class="container text-center text-md-start mt-2">
+            <!-- Grid row -->
+            <div class="row mt-3 justify-content-between">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mb-2">
+                <!-- Content -->
+                <h3 class="text-uppercase fw-bold"><span style="color: #FDAF7B">Task</span>enture</h3>
+                <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 10rem; background-color: #7c4dff; height: 2px">
+                <p>"Success is the sum of small efforts, repeated day in and day out. Taking notes is just one of those small efforts that leads to big achievements."</p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Contacts:</h6>
+                <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 80px; background-color: #7c4dff; height: 2px">
+                <p><i class="bi bi-home mr-3"></i> Email: <a href="#" class="text-white text-decoration-none">Taskenture@gmail.com</a></p>
+                <p><i class="fas fa-envelope mr-3"></i> Facebook: <a href="#" class="text-white text-decoration-none">Facebook.com/Taskenture</a></p>
+            </div>
+            <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        </section>
+        <!-- Section: Links -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Taskenture. IT2 Institute of Computing - DSNC. All rights reserved.
+        </div>
+    </footer>
     </div>
 
     <!-- Bootstrap JavaScript and JavaScript Vanilla-->

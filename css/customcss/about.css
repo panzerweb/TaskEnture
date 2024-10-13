@@ -136,6 +136,28 @@ p{
 .item7 { grid-row: span 15; background-color: var(--lighten-secondary); }
 .item8 { grid-row: span 15; background-color: var(--lighten-secondary); }
 
+
+/* Team Section */
+.team-container{
+    background: var(--primary);
+}
+.team-container .card{
+    border: 2px solid var(--lighten-secondary) !important;
+    background: var(--lighten-primary);
+}
+.team-container .card h5{
+    color: var(--tertiary);
+    font-size: clamp(1.5rem, 1.6vw, 2.5rem); 
+}
+.team-container .card p{
+    color: var(--tertiary);
+    font-size: clamp(1rem, 1.2vw, 1.3rem); 
+}
+.card-body {
+    min-height: 220px; /* Adjust this value as needed */
+}
+
+
 /* === responsive css === */
 
 @media only screen and (min-width: 768) and (max-width: 991px){
