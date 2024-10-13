@@ -1,5 +1,12 @@
 <?php include("./templates/header.php") ?>
 
+<?php 
+    //When the close button is click
+    if (isset($_POST["close"])) {
+        header("location: ./dashboard.php");
+    }
+?>
+
 <div class="col main-content">
     <div class="row py-2 title-header">
         <h1 class="align-self-start">Edit</h1>
@@ -33,6 +40,7 @@
                     </button>                           
                 </div>
                 <div class="col-12 d-flex justify-content-center justify-content-sm-end mt-4 mb-2">
+                    <button type="submit" name="close" class="btn btn-secondary mx-2 px-3">Close</button>
                     <button class="btn btn-danger mx-2 px-3">Delete Task</button>
                     <button class="btn btn-warning mx-2 px-3">Edit Changes</button>
                 </div>

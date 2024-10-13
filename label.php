@@ -19,6 +19,7 @@
                     <td>Mark</td>
                     <td>Task</td>
                     <td>Due Date</td>
+                    <td>Category</td>
                     <td>Action</td>
                 </tr>
             </thead>
@@ -33,6 +34,7 @@
                     </td>
                     <td class="fs-6 fw-bold" id="task-name">Personal Task 1</td>
                     <td>14/10/2024</td>
+                    <td><span class="badge rounded-pill text-bg-warning">Personal</span></td>
                     <td class="btn-behavior">
                         <?php include("./templates/function_buttons.php") ?>
                     </td>
@@ -47,6 +49,7 @@
                     </td>
                     <td class="fs-6 fw-bold" id="task-name">Professional Task 1</td>
                     <td>15/10/2024</td>
+                    <td><span class="badge rounded-pill text-bg-danger">Professional</span></td>
                     <td class="btn-behavior">
                         <?php include("./templates/function_buttons.php") ?>
                     </td>

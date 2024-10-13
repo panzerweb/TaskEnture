@@ -230,7 +230,25 @@ dialog::backdrop {
     margin: 0 2.5em;
   }
 
+/* Contact Styling */
 
+/** Contact page Styling */
+.contact-page-row{
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 5px;
+    color: var(--tertiary);
+}
+.contact-page-row svg{
+    background-color: var(--lighten-secondary);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.contact-page-row svg:hover{
+    background: var(--secondary);
+    color: var(--tertiary);
+}
 
 footer{
     background: var(--primary);

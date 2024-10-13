@@ -25,6 +25,7 @@
                     <td>Mark</td>
                     <td>Task</td>
                     <td>Due Date</td>
+                    <td>Category</td>
                     <td>Action</td>
                 </tr>
             </thead>
@@ -36,8 +37,9 @@
                         <i class="bi bi-check-circle"></i>
                         </label>
                     </td>
-                    <td class="fs-6 fw-bold" id="task-name">Lorem ipsum dolor sit amet.</td>
+                    <td class="fs-6 fw-bold" id="task-name">Discrete Mathematics: Design Plate Number 1.</td>
                     <td>14/10/2024</td>
+                    <td><span class="badge rounded-pill text-bg-warning">Personal</span></td>
                     <td class="btn-behavior">
                         <!-- Access the updating modal -->
                         <?php include("./templates/function_buttons.php") ?>
@@ -50,8 +52,9 @@
                         <i class="bi bi-check-circle"></i>
                         </label>
                     </td>
-                    <td class="fs-6 fw-bold" id="task-name">Lorem ipsum dolor sit amet.</td>
+                    <td class="fs-6 fw-bold" id="task-name">Discrete Mathematics: Design Plate Number 2.</td>
                     <td>14/10/2024</td>
+                    <td><span class="badge rounded-pill text-bg-danger">Professional</span></td>
                     <td class="btn-behavior">
                         <!-- Access the updating modal -->
                         <?php include("./templates/function_buttons.php") ?>
