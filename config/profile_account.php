@@ -96,10 +96,10 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <img src="../assets/img/badges/Rookie.svg" alt="">
+                                    <img src="../assets/img/badges/Rookie.svg" alt="" class="w-100">
                                 </td>
                                 <td>
-                                    <h2>Rookie</h2>
+                                    <p>Rookie</p>
                                 </td>
                                 <td>
                                     Completed First Task
@@ -113,26 +113,26 @@
                     <table class="table table-striped table-hover align-middle text-center">
                         <thead class="table-dark">
                             <tr>
-                                <th scope="col">Achievement</th>
-                                <th scope="col">Achievement Name</th>
+                                <th scope="col">Badge</th>
+                                <th scope="col">Badge Name</th>
                                 <th scope="col">Description</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>
-                                    <img src="../assets/img/achievements/New Mindset.svg" alt="">
+                                    <img src="../assets/img/achievements/New Mindset.svg" alt="" class="w-100">
                                 </td>
                                 <td>
-                                    <h2>New Mindset</h2>
+                                    <p>New Mindset</p>
                                 </td>
                                 <td>
-                                    First Task Achievement
+                                    First Task Ever
                                 </td>
                             </tr>
                         </tbody>
                     </table> 
-                </div> 
+                </div>  
             </div>
 
             
