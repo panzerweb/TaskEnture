@@ -36,8 +36,8 @@
                         <i class="bi bi-check-circle"></i>
                         </label>
                     </td>
-                    <td class="fs-6 fw-bold" id="task-name">Lorem ipsum dolor sit amet.</td>
-                    <td>14/10/2024</td>
+                    <td class="fs-6 fw-bold" id="task-name">Information Management: Case Study.</td>
+                    <td>10/14/2024</td>
                     <td class="btn-behavior">
                         <!-- Access the updating modal -->
                         <?php include("./templates/function_buttons.php") ?>
@@ -50,8 +50,8 @@
                         <i class="bi bi-check-circle"></i>
                         </label>
                     </td>
-                    <td class="fs-6 fw-bold" id="task-name">Lorem ipsum dolor sit amet.</td>
-                    <td>14/10/2024</td>
+                    <td class="fs-6 fw-bold" id="task-name">Digital Illustrator Portfolio.</td>
+                    <td>10/17/2024</td>
                     <td class="btn-behavior">
                         <!-- Access the updating modal -->
                         <?php include("./templates/function_buttons.php") ?>
