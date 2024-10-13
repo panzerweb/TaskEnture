@@ -136,7 +136,7 @@
                     </p>
                 </div>
                 <div class="row justify-content-center g-3">
-                    <div class="col">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="card shadow-sm border-0">
                             <!-- Cover Photo -->
                             <img src="../assets/img/carousel/bg1.jpg" class="card-img-top" alt="Cover Photo" style="height: 120px; object-fit: cover;">
@@ -159,7 +159,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="card shadow-sm border-0">
                             <!-- Cover Photo -->
                             <img src="../assets/img/carousel/bg1.jpg" class="card-img-top" alt="Cover Photo" style="height: 120px; object-fit: cover;">
@@ -182,7 +182,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="card shadow-sm border-0">
                             <!-- Cover Photo -->
                             <img src="../assets/img/carousel/bg1.jpg" class="card-img-top" alt="Cover Photo" style="height: 120px; object-fit: cover;">
@@ -205,7 +205,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="card shadow-sm border-0">
                             <!-- Cover Photo -->
                             <img src="../assets/img/carousel/bg1.jpg" class="card-img-top" alt="Cover Photo" style="height: 120px; object-fit: cover;">
