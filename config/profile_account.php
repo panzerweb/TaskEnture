@@ -121,7 +121,7 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <img src="../assets/img/badges/New Mindset.svg" alt="">
+                                    <img src="../assets/img/achievements/New Mindset.svg" alt="">
                                 </td>
                                 <td>
                                     <h2>New Mindset</h2>

@@ -1,0 +1,204 @@
+/* Some Styling will be on the reg.css but this css file is focused only on about us page */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: #401f71;
+    --secondary: #fdaf7b;
+    --tertiary: #ffffff;
+
+    --lighten-primary: #6635b1;
+    --lighten-secondary: #f78f4b;
+    --darken-tertiary: #dad9d9c5;
+}   
+
+body{
+    background: var(--lighten-primary) url("./background/bg-2.svg");
+}
+
+h1{
+    font-size: clamp(2.5rem, 3.5vw, 4rem); 
+    color: var(--lighten-secondary);
+}
+p{
+    font-size: clamp(1.2rem, 1.6vw, 2.5rem); 
+}
+
+/* Carousel */
+.carousel-item{
+    height: 100vh;
+    min-height: 300px; 
+}
+
+.bg-1{
+    background-image: url("../../assets/img/carousel/bg1.jpg");
+    background-size: 100% 100%;
+}
+.bg-2{
+    background-image: url("../../assets/img/carousel/bg2.jpg");
+    background-size: 100% 100%;
+}
+.bg-3{
+    background-image: url("../../assets/img/carousel/bg3.jpg");
+    background-size: 100% 100%;
+}
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+
+/* Masonry Achievements */
+.masonry {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 10px;
+    gap: 20px;
+    margin: 5rem auto;
+}
+
+.item {
+    background-color: #ffffff;
+    padding: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    font-size: 1.2em;
+    color: #fff;
+}
+.item:hover {
+    transform: translateY(-10px);
+}
+.item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.item:hover .overlay {
+    opacity: 1;
+}
+
+.item1 { grid-row: span 10; background-color: var(--secondary); }
+.item2 { grid-row: span 15; background-color: var(--secondary); }
+.item3 { grid-row: span 10; background-color: var(--secondary); }
+.item4 { grid-row: span 15; background-color: var(--secondary); }
+.item5 { grid-row: span 15; background-color: var(--lighten-secondary); }
+.item6 { grid-row: span 15; background-color: var(--lighten-secondary); }
+.item7 { grid-row: span 15; background-color: var(--lighten-secondary); }
+.item8 { grid-row: span 15; background-color: var(--lighten-secondary); }
+
+/* === responsive css === */
+
+@media only screen and (min-width: 768) and (max-width: 991px){
+    .carousel-caption{
+        bottom: 370px;
+    }
+    .carousel-caption p{
+        width: 100%;
+    }
+    .card{
+        margin-bottom: 30px;
+    }
+    .img-area img{
+        width: 100%;
+    }
+    .bg-1{
+        background-image: url("../../assets/img/carousel/bg1-cropped.jpg");
+        background-size: 100% 100%;
+    }
+    .bg-2{
+        background-image: url("../../assets/img/carousel/bg2-cropped.jpg");
+        background-size: 100% 100%;
+    }
+    .bg-3{
+        background-image: url("../../assets/img/carousel/bg3-cropped.jpg");
+        background-size: 100% 100%;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-caption{
+        bottom: 125px;
+    }
+    .carousel-caption h5{
+        font-size: 17px;
+    }
+    .carousel-caption a{
+        padding: 10px 15px; 
+    }
+    .carousel-caption p{
+        width: 100%;
+        line-height: 1.6;
+        font-style: 12px;
+    }
+    .about-text{
+        padding-top: 50px;
+    }
+    .card{
+        margin-bottom: 30px;
+    }
+    .bg-1{
+        background-image: url("../../assets/img/carousel/bg1-cropped.jpg");
+        background-size: 100% 100%;
+    }
+    .bg-2{
+        background-image: url("../../assets/img/carousel/bg2-cropped.jpg");
+        background-size: 100% 100%;
+    }
+    .bg-3{
+        background-image: url("../../assets/img/carousel/bg3-cropped.jpg");
+        background-size: 100% 100%;
+    }
+}

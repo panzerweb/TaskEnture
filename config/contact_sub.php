@@ -5,56 +5,14 @@
     <title>TaskEnture | SignUp</title>
 
     <!-- Bootstrap and CSS -->
-    <link rel="stylesheet" href="../../css/bootstrap-5.3.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../css/bootstrap-5.3.3-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../../css/customcss/reg.css">
+    <link rel="stylesheet" href="../css/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/customcss/reg.css">
 </head>
 <body>
     
-    <!-- Navigational Bar -->
-    <nav class="navbar navbar-expand-lg bg-light navbar-dark">
-        <div class="container-fluid">
-            <!-- Brand -->
-            <a class="navbar-brand fw-bold fs-3 text-light" href="../registration.php">
-                <span class="text-warning">Task</span>enture
-            </a>
-            <!-- Toggler Button to trigger Offcanvas -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <!-- Offcanvas -->
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                    <!-- Brand -->
-                    <a class="navbar-brand fw-bold fs-3 text-light" href="#">
-                        <span class="text-warning">Task</span>enture
-                    </a>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <!-- Navbar Items -->
-                    <ul class="navbar-nav justify-content-start align-self-center flex-grow-1 pe-3">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Learn More
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">About</a></li>
-                                <li><a class="dropdown-item" href="#">FAQs</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <!-- Login Button -->
-                    <form class="d-flex align-items-center mt-2">
-                        <a href="../login.php" class="btn btn-success px-3 rounded-3">Login</a>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </nav>
-
+    <!-- Navbar -->
+    <?php include("../templates/navbar.temp.php"); ?>
 
     <center>
     <div class="container" style="padding: 7rem 0;">
@@ -116,10 +74,10 @@
     </div>
 
     <!-- Bootstrap JavaScript and JavaScript Vanilla-->
-    <script src="../../css/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../../css/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
-    <script src="../../css/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+    <script src="../css/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../css/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="../css/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
 
-    <script src="../../js/app.js"></script>
+    <script src="../js/app.js"></script>
 </body>
 </html>
