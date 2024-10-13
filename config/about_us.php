@@ -60,7 +60,7 @@
     <div class="container-lg">
         <div class="text-center mt-5">
             <h1 class="fw-bold">Badges and Achievements</h1>
-            <p class="text-light w-75 mx-auto">Nothing is more rewarding than being rewarded for being productive and completing tasks of your life.</p>
+            <p class="text-light w-75 mx-auto fs-4">Nothing is more rewarding than being rewarded for being productive and completing tasks of your life.</p>
         </div>
         <div class="masonry">
             <!-- Achievements -->
@@ -131,7 +131,7 @@
             <div class="container-lg">
                 <div class="text-center py-3 pb-5">
                     <h1 class="fw-bold">Our Team</h1>
-                    <p class="text-light w-75 mx-auto">
+                    <p class="text-light w-75 mx-auto fs-4">
                         A Group of young and wonderful developers worked together to make this project possible.
                     </p>
                 </div>

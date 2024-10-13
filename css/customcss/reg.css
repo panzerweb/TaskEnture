@@ -18,13 +18,6 @@ body{
     background: var(--lighten-primary) url("./background/bg-2.svg");
 }
 
-h1{
-    font-size: clamp(2.5rem, 3.5vw, 4rem); 
-    color: var(--lighten-secondary);
-}
-p{
-    font-size: clamp(1.2rem, 1.6vw, 2.5rem); 
-}
 
 /* Navbar */
 .navbar{
