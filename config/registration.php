@@ -183,12 +183,13 @@
 
                                 <div class="form-group my-4">
                                     <label class="label_txt">Password</label>
-                                    <input type="password" name="password" class="form-control" required="">
+                                    <input type="password" name="password" id="password" class="form-control" required="">
                                 </div>
 
                                 <div class="form-group my-4">
                                     <label class="label_txt">Confirm Password</label>
-                                    <input type="password" name="passwordConfirm" class="form-control" required="">
+                                    <input type="password" name="passwordConfirm" id="passwordConfirm" class="form-control" required="">
+                                    <input type="checkbox" onclick="showPassword()">Show Password                                   
                                 </div>
 
                                 <button type="submit" name="register" class="btn form_btn w-100 mt-3 mb-4">Sign Up</button>

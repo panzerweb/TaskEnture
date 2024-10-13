@@ -38,6 +38,21 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 })
 
+
+//Show Password
+function showPassword(){
+    let passwordField = document.getElementById("password");
+    let confirmPassword = document.getElementById("passwordConfirm");
+
+    if (passwordField.type === "password" || confirmPassword.type === "password") {
+        passwordField.type = "text";
+        confirmPassword.type = "text";
+    } else {
+        passwordField.type = "password";
+        confirmPassword.type = "password";
+    }
+}
+
 //Filterable Buttons for labeling
 
 const filterButtons = document.querySelectorAll('.filter-button');
