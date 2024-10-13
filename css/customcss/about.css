@@ -125,14 +125,14 @@ h1{
     opacity: 1;
 }
 
-.item1 { grid-row: span 10; background-color: var(--secondary); }
-.item2 { grid-row: span 15; background-color: var(--secondary); }
-.item3 { grid-row: span 10; background-color: var(--secondary); }
-.item4 { grid-row: span 15; background-color: var(--secondary); }
-.item5 { grid-row: span 15; background-color: var(--lighten-secondary); }
-.item6 { grid-row: span 15; background-color: var(--lighten-secondary); }
-.item7 { grid-row: span 15; background-color: var(--lighten-secondary); }
-.item8 { grid-row: span 15; background-color: var(--lighten-secondary); }
+.item1 { grid-row: span 10; background-color: var(--tertiary); }
+.item2 { grid-row: span 15; background-color: var(--tertiary); }
+.item3 { grid-row: span 10; background-color: var(--tertiary); }
+.item4 { grid-row: span 15; background-color: var(--tertiary); }
+.item5 { grid-row: span 15; background-color: var(--tertiary); }
+.item6 { grid-row: span 15; background-color: var(--tertiary); }
+.item7 { grid-row: span 15; background-color: var(--tertiary); }
+.item8 { grid-row: span 15; background-color: var(--tertiary); }
 
 
 /* Team Section */
